@@ -14,7 +14,8 @@
 
 /* 4. COMPONENTS                          */
 /* 4.1 SECTION                            */
-/* 4.2 ORANGE BORDER                      */
+/* 4.2 HERO SECTION                       */
+/* 4.3. HERO SUBHEADING                   */
 
 /* 5. HOME                                */
 
@@ -76,6 +77,35 @@ section:first-of-type {
     padding-top: 40px;
 }
 
+/* 4.2 HERO SECTION                */
+.hero-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 0;
+}
+.hero-overlay {
+    text-align: center;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+.hero-overlay h1 {
+    color: white;
+}
+
+
+/* 4.3. HERO SUBHEADING            */
+.hero-subheading {
+    background-color: #000;
+    text-align: center;
+}
+.hero-subheading h2 {
+    text-transform: uppercase;
+    color: white;
+}
+.hero-subheading p {
+    color: #e95a0c;
+}
+
 
 
 
@@ -83,6 +113,10 @@ section:first-of-type {
 
 
 /* 5. HOME                         */
+.home .hero-section {
+    background-image: url('../images/home-banner/home-hero.png'); 
+}
+
 .course-category-teaser-wrapper {
     padding: 30px;
     background-position: center center;
