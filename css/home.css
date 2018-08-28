@@ -7,6 +7,7 @@
 
 /* 1. MAIN STYLESHEET OVERRIDES           */
 /* 1.1 HOME                               */
+/* 1.1.1 CONTACT FORM                     */
                        
 /* 2. FLEXBOX LAYOUT                      */
 /* 2.1 SECTION SIZINGS                    */
@@ -25,13 +26,37 @@
 
 /* 1. MAIN STYLESHEET OVERRIDES    */
 
-/* 1.1 HOME        */
+/* 1.1 HOME                        */
 body.home {
     background-color: white;
 }
 
 .home main .center { 
     background-image: none;
+}
+
+/* 1.1.1 CONTACT FORM              */
+.home .wpcf7 input, .home .wpcf7 textarea {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+.home .wpcf7 input[type="submit"] {
+    border-radius: 5px;
+}
+.home form p:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.home div.wpcf7 .ajax-loader {
+    display: none;
 }
 
 
@@ -50,6 +75,11 @@ section {
 section:first-of-type {
     padding-top: 40px;
 }
+
+
+
+
+
 
 
 /* 5. HOME                         */

@@ -112,7 +112,9 @@ get_header(); ?>
 			</div>	
 
 			<div class="five-twelfths">
-				<?php echo do_shortcode( '[contact-form-7 id="8" title="Contact form 1"]' ); ?>
+				<h2>Quick enquiry</h2>
+
+				<?php echo do_shortcode( '[contact-form-7 id="232" title="Quick Enquiry"]' ); ?>
 			</div>	
 		
 		</section>		
