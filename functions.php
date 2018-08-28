@@ -584,6 +584,16 @@ function tts_replace_jquery() {
 }
 add_action('wp_enqueue_scripts', 'tts_replace_jquery', 0);
 
+// enqueue a stylsheet only for the homepage layout, and only on the homepage
+// enqueue it after all other stylesheets = priority of 20
+function tts_enqueue_front_page_scripts() {
+    if ( is_front_page() )
+    {
+        wp_enqueue_script( 'home-styling', get_stylesheet_directory_uri() . '/css/home.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'tts_enqueue_front_page_scripts', 20 );
+
 
 
 /**
