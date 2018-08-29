@@ -100,7 +100,7 @@ get_header(); ?>
 				</div>		
 			</div>	
 
-			<div class="five-twelfths">
+			<div class="five-twelfths contact-form">
 
 				<h2>Quick enquiry</h2>
 				<?php echo do_shortcode( '[contact-form-7 id="232" title="Quick enquiry"]' ); ?>

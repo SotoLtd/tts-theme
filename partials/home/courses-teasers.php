@@ -19,7 +19,7 @@ if ( $group ) : ?>
 
     <?php if ( $courselinks ) : ?>
 
-        <ul>
+        <ul class="course-teasers">
 
             <?php
             // loop through the rows of data
@@ -28,7 +28,7 @@ if ( $group ) : ?>
                 <?php $postid = $course['course']->ID; ?>
 
                 <li>
-                    <a href="<?php echo get_the_permalink ( $postid );?>"><?php echo get_the_title ( $postid ); ?></a>
+                    <a href="<?php echo get_the_permalink ( $postid );?>"><?php echo get_the_title ( $postid ); ?><span class="dashicons dashicons-arrow-right-alt2"></span></a>
                 </li>
 
             <?php endforeach; ?>
@@ -39,7 +39,7 @@ if ( $group ) : ?>
 
     <?php if ( $group[ $category_link ] ) : ?>
 
-        <p><a href="<?php echo $group[ $category_link ]; ?>">View all <?php echo $group[$title]; ?> courses</a></p>
+        <a href="<?php echo $group[ $category_link ]; ?>">View all <?php echo $group[$title]; ?> courses</a><span class="dashicons dashicons-arrow-right-alt2"></span>
         
     <?php endif ?>
 
