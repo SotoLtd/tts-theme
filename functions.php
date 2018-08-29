@@ -592,6 +592,7 @@ function tts_enqueue_front_page_styles() {
     {
 		wp_enqueue_style( 'home-styling', get_stylesheet_directory_uri() . '/css/home.css' );
 		wp_enqueue_style( 'dashicons' );
+		wp_enqueue_style( 'live-search', get_stylesheet_directory_uri() . '/css/daves-wordpress-live-search.css' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'tts_enqueue_front_page_styles', 20 );
