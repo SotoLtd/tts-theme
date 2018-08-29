@@ -115,15 +115,20 @@ section:first-of-type {
 
 /* 4.3. HERO SUBHEADING            */
 .hero-subheading {
-    background-color: #000;
+    background-color: #333333;
     text-align: center;
+    padding: 20px 0px 8px;
 }
 .hero-subheading h2 {
     text-transform: uppercase;
     color: white;
+    font-size: 40px;
+    line-height: 40px;
 }
 .hero-subheading p {
     color: #e95a0c;
+    margin: 0;
+    font-size: 20px;
 }
 
 /* 4.4 SEARCH FORM                 */

@@ -11,7 +11,7 @@
 
     <div class="center">
         <h2>All courses are now available on-site</h2>
-        <p class="">Request a quote from an individual course page or call us on 0117 971 1892</p>
+        <p>Request a quote from an individual course page or call us on 0117 971 1892</p>
     </div>    
     
 </div>
