@@ -61,7 +61,7 @@ body.home {
     font-weight: bold;
 }
 .home a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 
@@ -332,7 +332,6 @@ ul.course-teasers {
     .contact-form {
         margin-top: 0;
     }
-
 
     .rowena-image { 
         -webkit-box-ordinal-group: 3;
