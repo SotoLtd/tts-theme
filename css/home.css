@@ -90,6 +90,12 @@ section:first-of-type {
     background-size: cover;
     background-position: center center;
     padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .hero-overlay {
     text-align: center;
@@ -149,7 +155,7 @@ section:first-of-type {
 .home .search-form label {
     width: 100%;
 }
-.home .search-form input {
+.home .search-form input[type="search"] {
     border: 10px solid #e95a0c;
     border-right: 0;
     padding: 5px;
@@ -252,6 +258,9 @@ section:first-of-type {
     /* 4. COMPONENTS                   */
 
     /* 4.2 HERO SECTION                */
+    .hero-section {
+        height: 420px;
+    } 
     .hero-overlay {
         max-width: 800px;
     }
