@@ -2,6 +2,8 @@
 
 if( function_exists('acf_add_local_field_group') ):
 
+// HOMEPAGE FIELDS - only displays on the homepage
+// Requires ACF PRO plugin to be installed
 acf_add_local_field_group(array(
 	'key' => 'group_5b867c6745c5f',
 	'title' => 'Homepage',
