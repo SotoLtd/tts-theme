@@ -39,7 +39,7 @@ if ( $group ) : ?>
 
     <?php if ( $group[ $category_link ] ) : ?>
 
-        <a href="<?php echo $group[ $category_link ]; ?>">View all <?php echo $group[$title]; ?> courses</a><span class="dashicons dashicons-arrow-right-alt2"></span>
+        <a href="<?php echo get_category_link( $group[ $category_link ] ); ?>">View all <?php echo $group[$title]; ?> courses</a><span class="dashicons dashicons-arrow-right-alt2"></span>
         
     <?php endif ?>
 

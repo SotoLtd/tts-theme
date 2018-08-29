@@ -83,8 +83,9 @@ acf_add_local_field_group(array(
 						'class' => '',
 						'id' => '',
 					),
-					'post_type' => array(
-					),
+                    'post_type' => array(
+                        0 => 'courses',
+                    ),
 					'taxonomy' => array(
 					),
 					'allow_null' => 0,
@@ -130,7 +131,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5b869a5a8f262',
-					'label' => 'Working at height course links',
+					'label' => 'Course links',
 					'name' => 'course_links',
 					'type' => 'repeater',
 					'instructions' => '',
@@ -160,8 +161,9 @@ acf_add_local_field_group(array(
 								'class' => '',
 								'id' => '',
 							),
-							'post_type' => array(
-							),
+                            'post_type' => array(
+                                0 => 'courses',
+                            ),
 							'taxonomy' => array(
 							),
 							'allow_null' => 0,
@@ -172,26 +174,27 @@ acf_add_local_field_group(array(
 					),
 				),
 				array(
-					'key' => 'field_5b869a9e8f264',
-					'label' => 'Working at height courses link',
-					'name' => 'category_link',
-					'type' => 'page_link',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'post_type' => array(
-					),
-					'taxonomy' => array(
-					),
-					'allow_null' => 0,
-					'allow_archives' => 1,
-					'multiple' => 0,
-				),
+                    'key' => 'field_5b86b6506ebce',
+                    'label' => 'Course category link',
+                    'name' => 'category_link',
+                    'type' => 'taxonomy',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'taxonomy' => 'course_category',
+                    'field_type' => 'radio',
+                    'allow_null' => 0,
+                    'add_term' => 1,
+                    'save_terms' => 0,
+                    'load_terms' => 0,
+                    'return_format' => 'id',
+                    'multiple' => 0,
+                ),
 			),
 		),
 		array(
@@ -230,7 +233,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5b86a3c00b8c6',
-					'label' => 'Working at height course links',
+					'label' => 'Course links',
 					'name' => 'course_links',
 					'type' => 'repeater',
 					'instructions' => '',
@@ -260,8 +263,9 @@ acf_add_local_field_group(array(
 								'class' => '',
 								'id' => '',
 							),
-							'post_type' => array(
-							),
+                            'post_type' => array(
+                                0 => 'courses',
+                            ),
 							'taxonomy' => array(
 							),
 							'allow_null' => 0,
@@ -272,26 +276,27 @@ acf_add_local_field_group(array(
 					),
 				),
 				array(
-					'key' => 'field_5b86a3c00b8c8',
-					'label' => 'Working at height courses link',
-					'name' => 'category_link',
-					'type' => 'page_link',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'post_type' => array(
-					),
-					'taxonomy' => array(
-					),
-					'allow_null' => 0,
-					'allow_archives' => 1,
-					'multiple' => 0,
-				),
+                    'key' => 'field_5b86b6506ebce',
+                    'label' => 'Course category link',
+                    'name' => 'category_link',
+                    'type' => 'taxonomy',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'taxonomy' => 'course_category',
+                    'field_type' => 'radio',
+                    'allow_null' => 0,
+                    'add_term' => 1,
+                    'save_terms' => 0,
+                    'load_terms' => 0,
+                    'return_format' => 'id',
+                    'multiple' => 0,
+                ),
 			),
 		),
 		array(
@@ -330,7 +335,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5b86a4fd23b52',
-					'label' => 'Working at height course links',
+					'label' => 'Course links',
 					'name' => 'course_links',
 					'type' => 'repeater',
 					'instructions' => '',
@@ -360,8 +365,9 @@ acf_add_local_field_group(array(
 								'class' => '',
 								'id' => '',
 							),
-							'post_type' => array(
-							),
+                            'post_type' => array(
+                                0 => 'courses',
+                            ),
 							'taxonomy' => array(
 							),
 							'allow_null' => 0,
@@ -372,26 +378,27 @@ acf_add_local_field_group(array(
 					),
 				),
 				array(
-					'key' => 'field_5b86a4fd23b54',
-					'label' => 'Working at height courses link',
-					'name' => 'category_link',
-					'type' => 'page_link',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'post_type' => array(
-					),
-					'taxonomy' => array(
-					),
-					'allow_null' => 0,
-					'allow_archives' => 1,
-					'multiple' => 0,
-				),
+                    'key' => 'field_5b86b6506ebce',
+                    'label' => 'Course category link',
+                    'name' => 'category_link',
+                    'type' => 'taxonomy',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'taxonomy' => 'course_category',
+                    'field_type' => 'radio',
+                    'allow_null' => 0,
+                    'add_term' => 1,
+                    'save_terms' => 0,
+                    'load_terms' => 0,
+                    'return_format' => 'id',
+                    'multiple' => 0,
+                ),
 			),
 		),
 		array(
