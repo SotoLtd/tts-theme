@@ -730,3 +730,8 @@ function misha_deactivate_pass_strength_meter() {
 	wp_dequeue_script( 'wc-password-strength-meter' );
  
 }
+
+
+/* OPCAN SPECIFIC FILES */
+
+require get_template_directory() . '/inc/acf-definitions.php';
