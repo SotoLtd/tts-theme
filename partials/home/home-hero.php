@@ -1,7 +1,7 @@
 <div class="hero-section">
 
 	<div class="center hero-overlay">
-        <h1>Training -> Find Your Course</h1>
+        <h2>Training <span class="dashicons dashicons-arrow-right-alt"></span> Find Your Course</h2>
         <?php get_template_part( 'partials/home/searchform' ); ?>
 	</div>	
 	
