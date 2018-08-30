@@ -60,8 +60,11 @@ body.home {
     text-decoration: none;
     font-weight: bold;
 }
-.home a:hover {
-    /* text-decoration: underline; */
+.home a:hover, .home a:active {
+    color: #808080;
+}
+.home .bread-crumb-container .breadcrumbs {
+    padding: 0;
 }
 
 
@@ -165,10 +168,10 @@ section:first-of-type {
 
 
 /* 5. HOME                           */
-.home ul.popular-courses {
+ul.popular-courses {
     margin-top: 15px;
 }
-.home ul.popular-courses li {
+ul.popular-courses li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;  
@@ -177,7 +180,7 @@ section:first-of-type {
     align-items: center;
     margin-bottom: 10px;
 }
-.home ul.popular-courses li a {
+ul.popular-courses li a {
     padding-left: 10px;
 }
 .dashicons-arrow-right-alt2::before {
@@ -186,6 +189,12 @@ section:first-of-type {
 }
 .contact-form {
     margin-top: 40px;
+}
+.popular-courses li, .course-teasers li {
+    padding-bottom: 10px;
+}
+.popular-courses .dashicons, .course-teasers .dashicons {
+    display: inline;
 }
 
 
@@ -277,7 +286,7 @@ ul.course-teasers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
