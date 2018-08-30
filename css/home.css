@@ -187,7 +187,7 @@ ul.popular-courses li a {
     color: #e95a0c;
     font-weight: bold;
 }
-.contact-form {
+.contact-form, h2.popular-courses-title {
     margin-top: 40px;
 }
 .popular-courses li, .course-teasers li {
@@ -355,7 +355,7 @@ ul.course-teasers {
 
 
     /* 5. HOME                         */
-    .contact-form {
+    h2.popular-courses-title, .contact-form {
         margin-top: 0;
     }
 

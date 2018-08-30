@@ -26,7 +26,7 @@ get_header(); ?>
 			</div>
 
 			<div class="five-twelfths">
-				<h2>Popular courses</h2>
+				<h2 class="popular-courses-title">Popular courses</h2>
 
 				<?php 
 				// check if the repeater field has rows of data
