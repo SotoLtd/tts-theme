@@ -251,16 +251,17 @@ input[type=search] {
 
 
 /* 5.3 COURSE TEASERS                */
-.course-category-teaser-wrapper {
+.course-category-teaser-image {
     padding: 30px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 2px solid white;
+    min-height: 100px;
 }
 .course-category-teaser-content {
     background-color: white;
-    padding: 20px;
+    padding: 20px 0;
 }
 ul.course-teasers {
     border-bottom: 1px solid #ccd6db;
@@ -268,14 +269,16 @@ ul.course-teasers {
     margin-bottom: 15px;
 }
 
-.working-at-height {
+.working-at-height .course-category-teaser-image {
     background-image: url('../images/home/working-at-height.png');
+    background-position: right center;
 }
-.site-safety {
+.site-safety .course-category-teaser-image{
     background-image: url('../images/home/site-safety.png');
 }
-.scaffolding-training {
+.scaffolding-training .course-category-teaser-image{
     background-image: url('../images/home/scaffolding-training.png');
+    background-position: right center;
 }
 
 
@@ -288,6 +291,7 @@ ul.course-teasers {
     display: flex;
     margin: 0 auto;
 }
+
 
 
 /* 20. MEDIA QUERIES               */
@@ -346,9 +350,8 @@ ul.course-teasers {
     .orange-border {
         border: 2px solid #e95a0c;
         border-radius: 20px; 
-        padding: 20px 0 0 20px;
+        padding: 0 0 0 20px;
     }
-
 
 
     /* 5. HOME                         */
@@ -361,6 +364,34 @@ ul.course-teasers {
        -ms-flex-order: 2;
         order: 2;
         border: none;
+        width: 100%;
+        border-radius: 18px;
+        border-top-left-radius: 0;
+    }
+
+    /* 5.3 COURSE TEASERS                */
+    .course-category-teaser-wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .course-category-teaser-image {
+        min-height: 220px;
+    }
+
+    .course-category-teaser-content {
+        position: absolute;
+        padding: 20px;
+    }
+    .course-category-teaser-content.five-twelfths {
+        max-width: 354px;
+    }
+    .working-at-height .course-category-teaser-content,
+    .scaffolding-training .course-category-teaser-content {
+        margin-left: 20px;
+    }
+    .site-safety .course-category-teaser-content {
+        margin-right: 20px;
     }
 }
 
@@ -370,5 +401,10 @@ ul.course-teasers {
     /* 1. MAIN STYLESHEET OVERRIDES           */
     main {
         padding-bottom: 80px;
+    }
+
+    .rowena-image { 
+        width: unset;
+        width: none;
     }
 }

@@ -49,6 +49,8 @@ get_header(); ?>
 
 			<div class="row-column course-category-teaser-wrapper working-at-height">
 
+				<div class="course-category-teaser-image"> </div>
+
 				<div class="course-category-teaser-content five-twelfths">
 
 					<?php $fieldgroup = 'working_at_height'; ?>
@@ -60,6 +62,8 @@ get_header(); ?>
 		
 			<div class="row-column course-category-teaser-wrapper site-safety">
 
+				<div class="course-category-teaser-image"> </div>
+
 				<div class="course-category-teaser-content five-twelfths flex-right">
 
 					<?php $fieldgroup = 'site_safety'; ?>
@@ -70,6 +74,8 @@ get_header(); ?>
 			</div>
 
 			<div class="row-column course-category-teaser-wrapper scaffolding-training">
+
+				<div class="course-category-teaser-image"> </div>
 
 				<div class="course-category-teaser-content five-twelfths">
 
@@ -89,9 +95,9 @@ get_header(); ?>
 				<h2>Great Courses & Great Service</h2>
 
 				<div class="row orange-border">
-
+	
 					<img class="rowena-image" src="<?php echo get_stylesheet_directory_uri() . '/images/home/Rowena-Hicks-Director.png' ?>" alt="Rowena Hicks - Director" />
-					
+
 					<div>
 
 						<?php the_field ( 'great_courses_text'); ?>
