@@ -391,6 +391,7 @@ ul.course-teasers {
         margin-left: 20px;
     }
     .site-safety .course-category-teaser-content {
+        margin-left: -20px;
         margin-right: 20px;
     }
 }
