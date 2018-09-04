@@ -585,18 +585,27 @@ function tts_replace_jquery() {
 add_action('wp_enqueue_scripts', 'tts_replace_jquery', 0);
 
 
+// enqueue a stylsheet only for the search results page
+// enqueue it after all other stylesheets = priority of 20
+function tts_enqueue_search_page_styles() {
+
+	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'live-search', get_stylesheet_directory_uri() . '/css/daves-wordpress-live-search.css' );
+	wp_enqueue_style( 'search', get_stylesheet_directory_uri() . '/css/search.css' );
+
+}
+add_action( 'wp_enqueue_scripts', 'tts_enqueue_search_page_styles', 15 );
+
+
 // enqueue a stylsheet only for the homepage layout, and only on the homepage
 // enqueue it after all other stylesheets = priority of 20
 function tts_enqueue_front_page_styles() {
     if ( is_front_page() )
     {
 		wp_enqueue_style( 'home-styling', get_stylesheet_directory_uri() . '/css/home.css' );
-		wp_enqueue_style( 'dashicons' );
-		wp_enqueue_style( 'live-search', get_stylesheet_directory_uri() . '/css/daves-wordpress-live-search.css' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'tts_enqueue_front_page_styles', 20 );
-
 
 
 /**

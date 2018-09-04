@@ -16,12 +16,10 @@
 /* 4.1 SECTION                            */
 /* 4.2 HERO SECTION                       */
 /* 4.3. HERO SUBHEADING                   */
-/* 4.4 SEARCH FORM                        */
 /* 4.5 ORANGE BORDER                      */
 
 /* 5. HOME                                */
 /* 5.1 HERO SECTION (overwrite 4.1)       */
-/* 5.2 SEARCH FORM (overwrite 4.4)        */
 /* 5.3 COURSE TEASERS                     */
 /* 5.4 ROWENA IMAGE STYLING               */
 
@@ -130,7 +128,7 @@ section:first-of-type {
     color: white;
     padding: 15px 5px 10px;
 }
-.hero-overlay .dashicons, .hero-overlay .dashicons-arrow-right-alt::before {
+.hero-overlay h2 .dashicons, .hero-overlay h2 .dashicons-arrow-right-alt::before {
     font-size: 26px;
     line-height: 1.2;
     width: 26px;
@@ -156,14 +154,6 @@ section:first-of-type {
     font-size: 20px;
 }
 
-/* 4.4 SEARCH FORM                 */
-.screen-reader-text {
-    position: absolute;
-    margin-left: -10000px;
-    display: block;
-    height: 1px;
-    margin-bottom: 0;
-}
 
 
 
@@ -201,52 +191,6 @@ ul.popular-courses li a {
 /* 5.1 HERO SECTION (overwrite 4.2)  */
 .home .hero-section {
     background-image: url('../images/home-banner/home-hero.png'); 
-}
-
-/* 5.2 SEARCH FORM (overwrite 4.4)   */
-.home .search-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-}
-.home .search-form label {
-    width: 100%;
-}
-.home .search-form .search-field {
-    border: 10px solid #e95a0c;
-    border-right: 0;
-    padding: 5px;
-    width: 100%;
-    height: 50px;
-}
-.home .search-form button {
-    background-color: white;
-}
-.home .search-form .dashicons {
-    border: 10px solid #e95a0c;
-    border-left: 0;
-    padding-bottom: 3px;
-}
-
-/* Needed for overriding safari user agent stylesheet */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
-}
-input[type=search] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: border-box;
-}
-
-.home .search-form .dashicons, .home .search-form .dashicons-search::before {
-    font-size: 30px;
-    line-height: 34px;
-    height: 50px;
-    width: 50px;
-    color: #e95a0c;
 }
 
 
