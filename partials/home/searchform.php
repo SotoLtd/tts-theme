@@ -6,6 +6,7 @@
             placeholder="<?php echo esc_attr_x( 'What course are you looking for?', 'placeholder' ) ?>"
             value="<?php echo get_search_query() ?>" name="s"
             title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+        <input type="hidden" name="post_type" value="courses">    
     </label>
 
     <button type="submit" class="dashicons dashicons-search" value="<?php echo esc_attr_x( 'Search', 'submit button'); ?>"></button>
