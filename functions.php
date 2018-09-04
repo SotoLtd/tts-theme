@@ -736,3 +736,15 @@ function misha_deactivate_pass_strength_meter() {
 /* OPCAN SPECIFIC FILES */
 
 require get_template_directory() . '/inc/acf-definitions.php';
+
+function search_filter($query) {
+
+	if ($query->is_search && !is_admin() ) {
+		$query->set('post_type', 'courses');
+	}
+	
+	return $query;
+}
+	
+add_filter('pre_get_posts', 'search_filter');
+
