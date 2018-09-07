@@ -750,6 +750,7 @@ function search_filter($query) {
 
 	if ($query->is_search && !is_admin() ) {
 		$query->set('post_type', 'courses');
+		$query->set('posts_per_page', '20');		
 	}
 	
 	return $query;
