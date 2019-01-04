@@ -585,6 +585,28 @@ function tts_replace_jquery() {
 add_action('wp_enqueue_scripts', 'tts_replace_jquery', 0);
 
 
+// enqueue a stylsheet only for the search results page
+// enqueue it after all other stylesheets = priority of 20
+function tts_enqueue_search_page_styles() {
+
+	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'live-search', get_stylesheet_directory_uri() . '/css/daves-wordpress-live-search.css' );
+	wp_enqueue_style( 'search', get_stylesheet_directory_uri() . '/css/search.css' );
+
+}
+add_action( 'wp_enqueue_scripts', 'tts_enqueue_search_page_styles', 15 );
+
+
+// enqueue a stylsheet only for the homepage layout, and only on the homepage
+// enqueue it after all other stylesheets = priority of 20
+function tts_enqueue_front_page_styles() {
+    if ( is_front_page() )
+    {
+		wp_enqueue_style( 'home-styling', get_stylesheet_directory_uri() . '/css/home.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'tts_enqueue_front_page_styles', 20 );
+
 
 /**
  * Quick hack to preview WooCommerce e-mails.
@@ -718,3 +740,21 @@ function misha_deactivate_pass_strength_meter() {
 	wp_dequeue_script( 'wc-password-strength-meter' );
  
 }
+
+
+/* OPCAN SPECIFIC FILES */
+
+require get_template_directory() . '/inc/acf-definitions.php';
+
+function search_filter($query) {
+
+	if ($query->is_search && !is_admin() ) {
+		$query->set('post_type', 'courses');
+		$query->set('posts_per_page', '20');		
+	}
+	
+	return $query;
+}
+	
+add_filter('pre_get_posts', 'search_filter');
+

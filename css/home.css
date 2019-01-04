@@ -1,0 +1,355 @@
+/* 
+*  This stylesheet has been approached mobile first.
+*  It is intended to overwrite and augment the existing stylsheet,
+*  but be done in such a way that it could be pulled out and used elsewhere
+*/
+
+
+/* 1. MAIN STYLESHEET OVERRIDES           */
+/* 1.1 HOME                               */
+/* 1.1.1 CONTACT FORM                     */
+                       
+/* 2. FLEXBOX LAYOUT                      */
+/* 2.1 SECTION SIZINGS                    */
+
+/* 4. COMPONENTS                          */
+/* 4.1 SECTION                            */
+/* 4.2 HERO SECTION                       */
+/* 4.3. HERO SUBHEADING                   */
+/* 4.5 ORANGE BORDER                      */
+
+/* 5. HOME                                */
+/* 5.1 HERO SECTION (overwrite 4.1)       */
+/* 5.3 COURSE TEASERS                     */
+/* 5.4 ROWENA IMAGE STYLING               */
+
+
+/* 20. MEDIA QUERIES                      */
+/* 20.3 MIN WIDTH 768px: TABLET           */
+/* 20.5 MIN WIDTH 959px: SMALL DESKTOP    */
+
+
+
+/* 1. MAIN STYLESHEET OVERRIDES    */
+
+/* 1.1 HOME                        */
+body.home {
+    background-color: white;
+}
+.home main .center { 
+    background-image: none;
+}
+.home .entry-title {
+    text-align: left;
+}
+.home .entry-title, .home h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+.home h2 {
+    margin-bottom: 10px;
+}
+.home h3 {
+    color: #e95a0c;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.home a:link, .home a:visited, .home a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+.home a:hover, .home a:active {
+    color: #808080;
+}
+.home .bread-crumb-container .breadcrumbs {
+    padding: 0;
+}
+
+
+/* 1.1.1 CONTACT FORM              */
+.home .wpcf7 input, .home .wpcf7 textarea {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+.home .wpcf7 input[type="submit"] {
+    border-radius: 5px;
+}
+.home form p:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.home div.wpcf7 .ajax-loader {
+    display: none;
+}
+
+
+
+/* 2. FLEXBOX LAYOUT               */
+
+/* 2.1 SECTION SIZINGS             */
+
+
+/* 4. COMPONENTS                   */
+
+/* 4.1 SECTION                     */
+section {
+    padding: 20px 0;
+}
+section:first-of-type {
+    padding-top: 40px;
+}
+
+/* 4.2 HERO SECTION                */
+.hero-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.hero-overlay {
+    text-align: center;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+.hero-overlay h2 {
+    color: white;
+    padding: 15px 5px 10px;
+}
+.hero-overlay h2 .dashicons, .hero-overlay h2 .dashicons-arrow-right-alt::before {
+    font-size: 26px;
+    line-height: 1.2;
+    width: 26px;
+    height: 26px;
+}
+
+
+/* 4.3. HERO SUBHEADING            */
+.hero-subheading {
+    background-color: #333333;
+    text-align: center;
+    padding: 20px 0px 8px;
+}
+.hero-subheading h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+}
+.hero-subheading p {
+    color: #e95a0c;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+
+
+/* 5. HOME                           */
+ul.popular-courses {
+    margin-top: 15px;
+}
+ul.popular-courses li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+ul.popular-courses li a {
+    padding-left: 10px;
+}
+.dashicons-arrow-right-alt2::before {
+    color: #e95a0c;
+    font-weight: bold;
+}
+.contact-form, h2.popular-courses-title {
+    margin-top: 40px;
+}
+.popular-courses li, .course-teasers li {
+    padding-bottom: 10px;
+}
+.popular-courses .dashicons, .course-teasers .dashicons {
+    display: inline;
+}
+
+
+/* 5.1 HERO SECTION (overwrite 4.2)  */
+.home .hero-section {
+    background-image: url('../images/home-banner/home-hero.png'); 
+}
+
+
+/* 5.3 COURSE TEASERS                */
+.course-category-teaser-image {
+    padding: 30px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid white;
+    min-height: 100px;
+}
+.course-category-teaser-content {
+    background-color: white;
+    padding: 20px 0;
+}
+ul.course-teasers {
+    border-bottom: 1px solid #ccd6db;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.working-at-height .course-category-teaser-image {
+    background-image: url('../images/home/working-at-height.png');
+    background-position: right center;
+}
+.site-safety .course-category-teaser-image{
+    background-image: url('../images/home/site-safety.png');
+}
+.scaffolding-training .course-category-teaser-image{
+    background-image: url('../images/home/scaffolding-training.png');
+    background-position: right center;
+}
+
+
+/* 5.4 ROWENA IMAGE STYLING        */
+.rowena-image {
+    border: 2px solid #e95a0c;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+/* 20. MEDIA QUERIES               */
+
+/* 20.3 MIN WIDTH 768px: TABLET    */
+@media screen and (min-width: 768px){
+
+    /* 2. FLEXBOX LAYOUT               */
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+    .row-column {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;      
+    }
+    .flex-right {
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+    }
+
+
+    /* 2.1 SECTION SIZINGS               */
+
+    .seven-twelfths {
+        width: 58%;
+        padding-right: 30px;
+    }
+    .one-twelfth-right-margin {
+        margin-right: 8%;
+    }
+    .five-twelfths {
+        width: 42%;
+    }
+
+
+    /* 4. COMPONENTS                   */
+
+    /* 4.2 HERO SECTION                */
+    .hero-section {
+        height: 420px;
+    } 
+    .hero-overlay {
+        max-width: 800px;
+    }
+
+    /* 4.5 ORANGE BORDER               */
+    .orange-border {
+        border: 2px solid #e95a0c;
+        border-radius: 20px; 
+        padding: 0 0 0 20px;
+    }
+
+
+    /* 5. HOME                         */
+    h2.popular-courses-title, .contact-form {
+        margin-top: 0;
+    }
+
+    .rowena-image { 
+        -webkit-box-ordinal-group: 3;
+       -ms-flex-order: 2;
+        order: 2;
+        border: none;
+        width: 100%;
+        border-radius: 18px;
+        border-top-left-radius: 0;
+    }
+
+    /* 5.3 COURSE TEASERS                */
+    .course-category-teaser-wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .course-category-teaser-image {
+        min-height: 220px;
+    }
+
+    .course-category-teaser-content {
+        position: absolute;
+        padding: 20px;
+    }
+    .course-category-teaser-content.five-twelfths {
+        max-width: 354px;
+    }
+    .working-at-height .course-category-teaser-content,
+    .scaffolding-training .course-category-teaser-content {
+        margin-left: 20px;
+    }
+    .site-safety .course-category-teaser-content {
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+}
+
+
+/* 20.5 MIN WIDTH 959px: SMALL DESKTOP    */
+@media screen and (min-width: 959px) {
+    /* 1. MAIN STYLESHEET OVERRIDES           */
+    main {
+        padding-bottom: 80px;
+    }
+
+    .rowena-image { 
+        width: unset;
+        width: none;
+    }
+}
