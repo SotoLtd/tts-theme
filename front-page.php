@@ -94,10 +94,7 @@ get_header(); ?>
 			<div class="seven-twelfths">
 				<h2>Great Courses & Great Service</h2>
 
-				<div class="row orange-border">
-	
-					<img class="rowena-image" src="<?php echo get_stylesheet_directory_uri() . '/images/home/Rowena-Hicks-Director.png' ?>" alt="Rowena Hicks - Director" />
-
+				<div class="orange-border">
 					<div>
 
 						<?php the_field ( 'great_courses_text'); ?>
