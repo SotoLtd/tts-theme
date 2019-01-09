@@ -153,7 +153,13 @@ section:first-of-type {
     margin: 0;
     font-size: 20px;
 }
-
+.hero-subheading a,
+.hero-subheading a:link,
+.hero-subheading a:visited{
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
 
 
 
