@@ -21,7 +21,7 @@ get_header(); ?>
 			<div class="seven-twelfths one-twelfth-right-margin">
 
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php the_field ( 'intro_text'); ?>
+				<?php the_content(); ?>
 
 			</div>
 
