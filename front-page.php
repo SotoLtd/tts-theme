@@ -26,7 +26,7 @@ get_header(); ?>
 			</div>
 
 			<div class="five-twelfths">
-				<h2 class="popular-courses-title">Popular courses</h2>
+				<h3 class="popular-courses-title">Popular courses</h3>
 
 				<?php 
 				// check if the repeater field has rows of data
@@ -92,7 +92,7 @@ get_header(); ?>
 		<section class="row">
 
 			<div class="seven-twelfths">
-				<h2>Great Courses & Great Service</h2>
+				<h3>Great Courses & Great Service</h3>
 
 				<div class="orange-border">
 					<div>
@@ -105,7 +105,7 @@ get_header(); ?>
 
 			<div class="five-twelfths contact-form">
 
-				<h2>Quick enquiry</h2>
+				<h3>Quick enquiry</h3>
 				<?php echo do_shortcode( '[contact-form-7 id="232" title="Quick enquiry"]' ); ?>
 
 			</div>	
