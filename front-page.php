@@ -73,19 +73,6 @@ get_header(); ?>
 
 			</div>
 
-			<div class="row-column course-category-teaser-wrapper scaffolding-training">
-
-				<div class="course-category-teaser-image"> </div>
-
-				<div class="course-category-teaser-content five-twelfths">
-
-					<?php $fieldgroup = 'scaffolding'; ?>
-					<?php include( locate_template( 'partials/home/courses-teasers.php' ) ); ?>
-
-				</div>
-
-			</div>
-
 		</section>	
 
 
