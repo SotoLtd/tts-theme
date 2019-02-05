@@ -244,10 +244,33 @@ var google_remarketing_only = true;
 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1005052345/?value=0&amp;guid=ON&amp;script=0"/>
 
 </div>
-</noscript> 
+</noscript>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v3.2'
+        });
+    };
 
-
-<!--PAGE PROOFER-->
-<script type="text/javascript"> (function (d, t) { var pp = d.createElement(t), s = d.getElementsByTagName(t)[0]; pp.src = '//app.pageproofer.com/overlay/js/2702/1254'; pp.type = 'text/javascript'; pp.async = true; s.parentNode.insertBefore(pp, s); })(document, 'script'); </script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=install_email
+     page_id="313446965380984"
+     theme_color="#ff7e29"
+     logged_in_greeting="Hello, how can we help you today ?"
+     logged_out_greeting="Hello, how can we help you today ?">
+</div>
 </body>
 </html>
