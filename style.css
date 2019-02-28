@@ -414,6 +414,7 @@ header {
     top: 0;
     width: 100%;
     cursor: pointer;
+    box-sizing: border-box;
 }
 #mian-menu-icon-mobile span {
     color: #fff;
