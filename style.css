@@ -603,6 +603,7 @@ body .header-book-online-button a {
     border: 2px solid #fff;
     border-radius: 2px;
     padding: 6px 16px;
+    text-decoration: none;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     -ms-transition: all .35s;
