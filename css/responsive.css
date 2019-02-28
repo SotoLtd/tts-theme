@@ -71,7 +71,10 @@
     header .methods {
         text-align: center;
     }
-    .tts-col {
+	header .methods .method.tel li.header-ask-a-question {
+		display: none;
+	}
+	.tts-col {
         float: none;
         margin: 0 0 25px;
         width: 100%!important;
@@ -150,14 +153,12 @@
         #main-nav ul {
             margin-top: 0;
         }
-        header .methods .method.tel li {
+        header .methods .method.tel li.header-contact-tel {
             background-size: 32px auto;
             font-size: 26px;
             padding: 2px 0 0 40px;
         }
         header .header-book-buttons {
-            bottom: 32px;
-            right: 0;
             width: 190px;
         }
 	header .header-book-buttons .booknow {
@@ -347,10 +348,19 @@
 	    display: inline-block;
 	    margin: 0 0 10px;
 	}
+
+
+	header .center {
+		padding-top: 120px;
+	}
 	header .header-book-buttons {
-	    position: static;
-            text-align: center;
-            margin: 0 auto;
+		bottom: auto;
+		position: absolute;
+		right: 0;
+		left: 0;
+		text-align: center;
+		margin: 0 auto;
+		top: 60px;
 	}
 
 	#mian-menu-icon-mobile{
@@ -593,11 +603,20 @@
     section#homeboxes a.full {
         font-size: 14px;
     }
-    header .header-book-buttons {
-        position: static;
-        text-align: center;
-        margin: 0 auto;
-    }
+
+
+	header .center {
+		padding-top: 120px;
+	}
+	header .header-book-buttons {
+		bottom: auto;
+		position: absolute;
+		right: 0;
+		left: 0;
+		text-align: center;
+		margin: 0 auto;
+		top: 60px;
+	}
     .tts-admin-pcc,
     .tts-admin-ppbb .administrate-checkout-payment-option-cc{
         width: 100%;
@@ -658,12 +677,17 @@
 		width: 90%;
 	}
 
+	header .center {
+		padding-top: 120px;
+	}
 	header .header-book-buttons {
-	    bottom: 0;
-	    position: static;
+	    bottom: auto;
+	    position: absolute;
 	    right: 0;
+		left: 0;
 	    text-align: center;
-            margin: 0 auto;
+		margin: 0 auto;
+		top: 60px;
 	}
 
 	header .methods .method {
@@ -894,6 +918,10 @@
         margin-left: 3px;
         bottom: -20px;
     }
+	header .methods .method.tel,
+	.tbs-header-cart-summery-wrap{
+		text-align: center;
+	}
 }
 @media screen and (max-width: 479px){
     #mobile-searchbar {

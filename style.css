@@ -477,11 +477,11 @@ header .col {
 }
 
 header .col.col1 {
-    width: 565px;
+    width: 540px;
 }
 
 header .col.col2 {
-    width: 385px;
+    width: 410px;
 }
 
 header .contact .accredits {
@@ -512,16 +512,47 @@ header .methods .method {
     font-weight: bold;
     margin: 0;
 }
-
+header .methods .method.tel {
+    display: block;
+    text-align: right;
+}
 header .methods .method li {
     font-size: 34px;
     height: 40px;
     margin: 0;
     padding: 4px 0 0 54px;
 }
-
 header .methods .method.tel li {
-    background: url(images/icontel.png) no-repeat;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+}
+header .methods .method.tel li.header-ask-a-question {
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.ask-a-question {
+    color: transparent;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 31px;
+    width: 160px;
+    height: 31px;
+    background-image: url('images/ask-a-question-tr.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-decoration: none;
+}
+.ask-a-question.aaq-green{
+    background-image: url('images/ask-a-question.png');
+}
+.ask-a-question span {
+    display: none;
+}
+header .methods .method.tel li.header-contact-tel {
+    padding: 4px 0 0 0;
 }
 
 header .methods .method.txt li {
@@ -1037,7 +1068,9 @@ section#homeboxes .box6,
 section#homeboxes .box8 {
     margin-right: 0px;
 }
-
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
 footer {
     background: #000;
 }
@@ -1051,11 +1084,11 @@ footer .center {
 footer .orange {
     background: #e95a0c;
     border-radius: 9px 9px 0 0;
-    height: 335px;
     left: 0;
     position: absolute;
-    top: -100px;
+    top: -40px;
     width: 378px;
+    bottom: 15px;
 }
 footer .footer-orrage-logo{
     background: transparent url('images/tts-footer-logo.jpg') no-repeat 0 0;
@@ -1084,7 +1117,8 @@ footer .orange li a {
 }
 
 footer .orange li.tel {
-    background: url(images/footertel.png) no-repeat;
+    background: url(images/phone.png) no-repeat;
+    background-size: 40px 40px;
 }
 
 footer .orange li.txt {
@@ -1092,13 +1126,14 @@ footer .orange li.txt {
 }
 
 footer .orange li.email {
-    background: url(images/footerat.png) no-repeat;
+    background: url(images/email.png) no-repeat;
+    background-size: 40px 40px;
 }
 
 footer .info {
     float: right;
     width: 560px;
-    height: 250px;
+    height: 200px;
     color: #fff;
 }
 
@@ -1160,6 +1195,10 @@ footer .info .copyright span {
 }
 .footer-social-icons a {
     margin-left: 5px;
+}
+.footer-social-icons img {
+    width: 46px;
+    height: auto;
 }
 
 #nav-above .nav-previous,
@@ -2716,6 +2755,7 @@ body .administrate-event-table-sold-out {
     font-size: 16px;
     line-height: 16px;
     margin-top: 15px;
+    padding-bottom: 15px;
 }
 .tbs-header-cart-summery .tbs-cart-summery {
     background-image: url('images/course/cart.png');

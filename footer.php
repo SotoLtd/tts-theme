@@ -111,7 +111,7 @@ function ttsdebounce(func, wait, immediate) {
 		 
 		w = $(document).width();
 		//animateOneWay($('#plane'),{left: w}, {left: -1980}, 24000, 25000);
-		$('.fc-checkbox input[name*="checkbox-"]:not(:checked)').trigger('click');
+		//$('.fc-checkbox input[name*="checkbox-"]:not(:checked)').trigger('click');
 	});
 
 

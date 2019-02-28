@@ -607,6 +607,11 @@ function tts_enqueue_front_page_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'tts_enqueue_front_page_styles', 20 );
 
+function tts_eneuuee_scripts() {
+    wp_enqueue_script('tts-custom-js', get_stylesheet_directory_uri() . '/js/tts-custom.js', array('jquery'), null, true);
+}
+add_action( 'wp_enqueue_scripts', 'tts_eneuuee_scripts' );
+
 
 /**
  * Quick hack to preview WooCommerce e-mails.
