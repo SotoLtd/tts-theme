@@ -328,7 +328,7 @@
             vertical-align: middle;
 	}
 	header .contact {
-	    margin-top: 15px;
+	    margin-top: 0;
 	}
 	header .contact .accredits {
 	    text-align: center;
@@ -347,11 +347,6 @@
 	header .methods .method li {
 	    display: inline-block;
 	    margin: 0 0 10px;
-	}
-
-
-	header .center {
-		padding-top: 120px;
 	}
 	header .header-book-buttons {
 		bottom: auto;
@@ -603,11 +598,6 @@
     section#homeboxes a.full {
         font-size: 14px;
     }
-
-
-	header .center {
-		padding-top: 120px;
-	}
 	header .header-book-buttons {
 		bottom: auto;
 		position: absolute;
@@ -921,6 +911,14 @@
 	header .methods .method.tel,
 	.tbs-header-cart-summery-wrap{
 		text-align: center;
+	}
+	.header-book-online-button {
+		text-align: center;
+		margin: 0 0 20px;
+	}
+	.tbs-header-cart-summery-wrap {
+		margin: 0;
+		padding: 0 0 20px;
 	}
 }
 @media screen and (max-width: 479px){
