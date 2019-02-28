@@ -8,7 +8,7 @@
 /* 1. MAIN STYLESHEET OVERRIDES           */
 /* 1.1 HOME                               */
 /* 1.1.1 CONTACT FORM                     */
-                       
+
 /* 2. FLEXBOX LAYOUT                      */
 /* 2.1 SECTION SIZINGS                    */
 
@@ -29,38 +29,45 @@
 /* 20.5 MIN WIDTH 959px: SMALL DESKTOP    */
 
 
-
 /* 1. MAIN STYLESHEET OVERRIDES    */
 
 /* 1.1 HOME                        */
 body.home {
     background-color: white;
 }
-.home main .center { 
+
+.home main .center {
     background-image: none;
 }
+
 .home .entry-title {
     text-align: left;
 }
+
 .home .entry-title, .home h2 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 32px;
 }
+
 .home h2 {
     margin-bottom: 10px;
 }
+
 .home h3 {
     color: #e95a0c;
     margin-bottom: 10px;
     margin-top: 20px;
 }
+
 .home a:link, .home a:visited, .home a:active {
     text-decoration: none;
     font-weight: bold;
 }
+
 .home a:hover, .home a:active {
     color: #808080;
 }
+
 .home .bread-crumb-container .breadcrumbs {
     padding: 0;
 }
@@ -75,9 +82,11 @@ body.home {
     padding-bottom: 10px;
     font-size: 1rem;
 }
+
 .home .wpcf7 input[type="submit"] {
     border-radius: 5px;
 }
+
 .home form p:last-of-type {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,10 +95,10 @@ body.home {
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
+
 .home div.wpcf7 .ajax-loader {
     display: none;
 }
-
 
 
 /* 2. FLEXBOX LAYOUT               */
@@ -103,6 +112,7 @@ body.home {
 section {
     padding: 20px 0;
 }
+
 section:first-of-type {
     padding-top: 40px;
 }
@@ -120,14 +130,17 @@ section:first-of-type {
     -ms-flex-align: center;
     align-items: center;
 }
+
 .hero-overlay {
     text-align: center;
-    background-color: rgba( 0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
+
 .hero-overlay h2 {
     color: white;
     padding: 15px 5px 10px;
 }
+
 .hero-overlay h2 .dashicons, .hero-overlay h2 .dashicons-arrow-right-alt::before {
     font-size: 26px;
     line-height: 1.2;
@@ -142,52 +155,60 @@ section:first-of-type {
     text-align: center;
     padding: 20px 0px 8px;
 }
+
 .hero-subheading h2 {
     color: white;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 30px;
 }
+
 .hero-subheading p {
-    color: #e95a0c;
+    color: #ff6600;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
+
 .hero-subheading a,
 .hero-subheading a:link,
-.hero-subheading a:visited{
+.hero-subheading a:visited {
     color: inherit;
     font-weight: inherit;
     font-size: inherit;
 }
 
 
-
 /* 5. HOME                           */
 ul.popular-courses {
     margin-top: 15px;
 }
+
 ul.popular-courses li {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;  
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 10px;
 }
+
 ul.popular-courses li a {
     padding-left: 10px;
 }
+
 .dashicons-arrow-right-alt2::before {
     color: #e95a0c;
     font-weight: bold;
 }
+
 .contact-form, h2.popular-courses-title {
     margin-top: 40px;
 }
+
 .popular-courses li, .course-teasers li {
     padding-bottom: 10px;
 }
+
 .popular-courses .dashicons, .course-teasers .dashicons {
     display: inline;
 }
@@ -195,7 +216,7 @@ ul.popular-courses li a {
 
 /* 5.1 HERO SECTION (overwrite 4.2)  */
 .home .hero-section {
-    background-image: url('../images/home-banner/home-hero.png'); 
+    background-image: url('../images/home-banner/home-hero.png');
 }
 
 
@@ -208,10 +229,12 @@ ul.popular-courses li a {
     border-bottom: 2px solid white;
     min-height: 100px;
 }
+
 .course-category-teaser-content {
     background-color: white;
     padding: 20px 0;
 }
+
 ul.course-teasers {
     border-bottom: 1px solid #ccd6db;
     padding-bottom: 15px;
@@ -222,10 +245,12 @@ ul.course-teasers {
     background-image: url('../images/home/working-at-height.png');
     background-position: right center;
 }
-.site-safety .course-category-teaser-image{
+
+.site-safety .course-category-teaser-image {
     background-image: url('../images/home/site-safety.png');
 }
-.scaffolding-training .course-category-teaser-image{
+
+.scaffolding-training .course-category-teaser-image {
     background-image: url('../images/home/scaffolding-training.png');
     background-position: right center;
 }
@@ -242,11 +267,10 @@ ul.course-teasers {
 }
 
 
-
 /* 20. MEDIA QUERIES               */
 
 /* 20.3 MIN WIDTH 768px: TABLET    */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
     /* 2. FLEXBOX LAYOUT               */
     .row {
@@ -256,6 +280,7 @@ ul.course-teasers {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
     }
+
     .row-column {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -263,8 +288,9 @@ ul.course-teasers {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;      
+        flex-direction: column;
     }
+
     .flex-right {
         -ms-flex-item-align: end;
         align-self: flex-end;
@@ -272,25 +298,26 @@ ul.course-teasers {
 
 
     /* 2.1 SECTION SIZINGS               */
-
     .seven-twelfths {
         width: 58%;
         padding-right: 30px;
     }
+
     .one-twelfth-right-margin {
         margin-right: 8%;
     }
+
     .five-twelfths {
         width: 42%;
     }
 
 
     /* 4. COMPONENTS                   */
-
     /* 4.2 HERO SECTION                */
     .hero-section {
         height: 420px;
-    } 
+    }
+
     .hero-overlay {
         max-width: 585px;
     }
@@ -298,7 +325,7 @@ ul.course-teasers {
     /* 4.5 ORANGE BORDER               */
     .orange-border {
         border: 2px solid #e95a0c;
-        border-radius: 20px; 
+        border-radius: 20px;
         padding: 0 0 0 20px;
     }
 
@@ -308,9 +335,9 @@ ul.course-teasers {
         margin-top: 0;
     }
 
-    .rowena-image { 
+    .rowena-image {
         -webkit-box-ordinal-group: 3;
-       -ms-flex-order: 2;
+        -ms-flex-order: 2;
         order: 2;
         border: none;
         width: 100%;
@@ -324,6 +351,7 @@ ul.course-teasers {
         -ms-flex-pack: center;
         justify-content: center;
     }
+
     .course-category-teaser-image {
         min-height: 220px;
     }
@@ -332,13 +360,16 @@ ul.course-teasers {
         position: absolute;
         padding: 20px;
     }
+
     .course-category-teaser-content.five-twelfths {
         max-width: 354px;
     }
+
     .working-at-height .course-category-teaser-content,
     .scaffolding-training .course-category-teaser-content {
         margin-left: 20px;
     }
+
     .site-safety .course-category-teaser-content {
         margin-left: -20px;
         margin-right: 20px;
@@ -353,7 +384,7 @@ ul.course-teasers {
         padding-bottom: 80px;
     }
 
-    .rowena-image { 
+    .rowena-image {
         width: unset;
         width: none;
     }

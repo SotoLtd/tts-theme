@@ -8,7 +8,7 @@
 /* 1.2 SEARCH RESULTS                     */
 
 /* 2. SEARCH AGAIN                        */
-          
+
 
 /* 20. MEDIA QUERIES                      */
 /* 20.3 MIN WIDTH 768px: TABLET           */
@@ -22,12 +22,14 @@
     display: flex;
     width: 100%;
 }
+
 .search-form label {
     width: 100%;
 }
+
 .search-form .search-field {
     border: 10px solid #e95a0c;
-    border-radius: 0!important;
+    border-radius: 0 !important;
     border-right: 0;
     padding: 5px;
     width: 100%;
@@ -35,26 +37,31 @@
     font-size: 16px;
     -webkit-appearance: none;
 }
+
 .search-form button {
     background-color: white;
 }
+
 .search-form .dashicons {
     border: 10px solid #e95a0c;
     border-left: 0;
     padding-bottom: 3px;
 }
+
 /* Needed for overriding safari user agent stylesheet */
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
+    -webkit-appearance: none;
 }
+
 input[type=search] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: border-box;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: border-box;
 }
-.search-form .dashicons, 
+
+.search-form .dashicons,
 .search-form .dashicons-search::before {
     font-size: 30px;
     line-height: 40px;
@@ -76,25 +83,26 @@ input[type=search] {
 .search-results .bread-crumb-container .breadcrumbs {
     display: none;
 }
+
 .search-results .page-title, .search-results .search-again h2 {
     color: black;
     margin-top: 35px;
 }
+
 .search-results .entry-title {
     padding-top: 15px;
     text-align: left;
 }
+
 .search-results .entry-title a {
     text-decoration: none;
     font-size: 24px;
     color: #e95a0c;
 }
+
 .search-results .navigation a {
     text-decoration: none;
 }
-
-
-
 
 
 /* 2. SEARCH AGAIN                      */
@@ -102,17 +110,16 @@ input[type=search] {
     padding-bottom: 30px;
 }
 
-.search-results .search-again .search-form, 
+.search-results .search-again .search-form,
 .search-results ul.dwls_search_results {
     max-width: 300px;
 }
 
 
-
 /* 20. MEDIA QUERIES               */
 
 /* 20.2 MIN WIDTH 567px: TABLET    */
-@media screen and (min-width: 567px){
+@media screen and (min-width: 567px) {
 
     /* 2. SEARCH AGAIN                      */
     .search-results .search-again .search-form,
@@ -124,7 +131,7 @@ input[type=search] {
 
 
 /* 20.3 MIN WIDTH 768px: TABLET    */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
     /* 2. SEARCH AGAIN                      */
     .search-results .search-again .search-form,

@@ -5,11 +5,11 @@
 /** Dave's WordPress Live Search CSS **/
 ul.dwls_search_results {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 0px; /* this is set in the plugin settings, so redundant here */
     left: 0;
-    overflow:auto;
-    z-index: 9999;	
+    overflow: auto;
+    z-index: 9999;
 
     max-width: 585px;
     width: 100%;
@@ -33,12 +33,13 @@ ul.dwls_search_results li {
     text-decoration: none;
     border-bottom: 1px solid #808080;
 }
+
 ul.dwls_search_results li:last-of-type {
     border-bottom: none;
 }
 
 ul.dwls_search_results li a,
-ul.dwls_search_results li a:link, 
+ul.dwls_search_results li a:link,
 ul.dwls_search_results li a:visited {
     display: block;
     margin-left: 0;
@@ -48,7 +49,6 @@ ul.dwls_search_results li a:visited {
     font-weight: normal;
     line-height: 1;
 }
-
 
 
 ul.dwls_search_results .daves-wordpress-live-search_author {
@@ -64,8 +64,8 @@ ul.dwls_search_results .daves-wordpress-live-search_date {
 
 /* BEGIN post thumbnails */
 ul.dwls_search_results li.post_with_thumb a {
-    width:150px;
-    float:left;
+    width: 150px;
+    float: left;
     margin-bottom: 5px;
 }
 
@@ -75,6 +75,7 @@ ul.dwls_search_results li.post_with_thumb .post_thumb {
     height: 48px;
     width: 48px;
 }
+
 /* END post thumbnails */
 
 /* BEGIN post excerpt */
@@ -82,6 +83,7 @@ ul.dwls_search_results .excerpt, ul.dwls_search_results .meta {
     font-size: 75%;
     width: 100%;
 }
+
 /* END post excerpt */
 
 ul.dwls_search_results .clearfix {
@@ -104,32 +106,32 @@ ul.dwls_search_results .clearfix {
 }
 
 .dwls_search_results_activity_indicator {
-    z-index:999999;
+    z-index: 999999;
 }
 
 
 /* 2. Media queries                      */
 
-@media screen and (min-width: 768px) and (max-width: 959px){
-	ul.dwls_search_results {
-		width: 748px;
-    }   
-}
-
-@media screen and (min-width: 640px) and (max-width: 767px){
-	ul.dwls_search_results {
-		width: 620px;
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    ul.dwls_search_results {
+        width: 748px;
     }
 }
 
-@media screen and (max-width: 639px){
-	ul.dwls_search_results {
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    ul.dwls_search_results {
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    ul.dwls_search_results {
         width: 540px;
     }
 }
 
-@media screen and (max-width: 567px){
-	ul.dwls_search_results {
-		width: 90%;
+@media screen and (max-width: 567px) {
+    ul.dwls_search_results {
+        width: 90%;
     }
 }

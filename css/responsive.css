@@ -1,29 +1,37 @@
-@media screen and (min-width: 960px){
+@media screen and (min-width: 960px) {
     #ttscf-ways26 {
         position: absolute;
         right: 10px;
         top: 0;
         width: 44%;
     }
+
     #post-258 .entry-content {
         padding-right: 5px;
     }
 }
-@media screen and (min-width: 768px){
-	#main-nav {
-		margin-top: 0;
-	}
-    .tts-desktop{
+
+@media screen and (min-width: 768px) {
+    #main-nav {
+        margin-top: 0;
+    }
+
+    .tts-desktop {
         display: block;
     }
-    .tts-mobile{
+
+    .tts-mobile {
         display: none;
     }
-    .tpd-content{width: 560px;}
-    
+
+    .tpd-content {
+        width: 560px;
+    }
+
     .tts-checkout-footer-left .administrate-footer {
         text-align: left;
     }
+
     .tts-checkout-footer-right img {
         position: absolute;
         right: 0;
@@ -31,449 +39,555 @@
         top: 25px;
     }
 }
-@media screen and (max-width: 767px){
-    body #htopbar{
-            border: 0 none;
-            height: 48px;
+
+@media screen and (max-width: 767px) {
+    body #htopbar {
+        border: 0 none;
+        height: 48px;
     }
+
     #mian-menu-icon-mobile, #mobile-searchbar {
         z-index: 1;
     }
+
     .admin-bar #mian-menu-icon-mobile {
         top: 46px;
     }
+
     .admin-bar #mobile-searchbar {
         top: 46px;
     }
+
     header .center {
         padding-top: 65px;
     }
-    .tts-desktop{
+
+    .tts-desktop {
         display: none;
     }
-    .tts-mobile{
+
+    .tts-mobile {
         display: block;
     }
+
     .width-half {
         width: 100%;
         float: none;
         padding: 0 15px;
     }
+
     #contact_f_upper li {
         float: none;
         width: 100%;
     }
-    .tpd-content{max-width: 560px;}
-        #main-nav ul {
+
+    .tpd-content {
+        max-width: 560px;
+    }
+
+    #main-nav ul {
         margin-top: 0;
     }
-    
+
     header .methods {
         text-align: center;
     }
-	header .methods .method.tel li.header-ask-a-question {
-		display: none;
-	}
-	.tts-col {
+
+    header .methods .method.tel li.header-ask-a-question {
+        display: none;
+    }
+
+    .tts-col {
         float: none;
         margin: 0 0 25px;
-        width: 100%!important;
+        width: 100% !important;
     }
+
     .course-content, .course-sidebar {
         float: none;
         width: auto;
         padding-right: 0;
         padding-left: 0;
     }
+
     .course-sidebar {
         border-left: 0 none;
     }
+
     .course-sidebar-inner {
         padding-left: 20px;
     }
+
     .breadcrumbs {
         display: none;
     }
+
     .course-enquiry-form {
-        display: none!important;
+        display: none !important;
     }
+
     .tts-checkout-footer-right {
         text-align: center;
     }
-	#main-nav {
-	    left: 0;
-	    margin: 0;
-	    padding: 0;
-	    position: absolute;
-	    right: 0;
-	    top: 0;
-	    display: none;
-	    z-index: 9999;
-	}
-	#main-nav ul {
-	    margin-bottom: 0;
-	}
-	#main-nav ul li {
-	    display: block;
-	    float: none;
-	}
-	#main-nav ul li a {
-	    border-bottom: 1px solid #f0f0f0;
-	    border-radius: 0;
-	    margin: 0;
-	}
-	#main-nav ul.sub-menu {
-	    display: block;
-	    margin: 0;
-	}
-	#main-nav ul.sub-menu a {
-	    padding-left: 30px;
-	}
-    
+
+    #main-nav {
+        left: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+        z-index: 9999;
+    }
+
+    #main-nav ul {
+        margin-bottom: 0;
+    }
+
+    #main-nav ul li {
+        display: block;
+        float: none;
+    }
+
+    #main-nav ul li a {
+        border-bottom: 1px solid #f0f0f0;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #main-nav ul.sub-menu {
+        display: block;
+        margin: 0;
+    }
+
+    #main-nav ul.sub-menu a {
+        padding-left: 30px;
+    }
+
     #main-nav {
         top: 43px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 959px){
-	.center {
-		width: 748px;
-	}
 
-	#htopbar{
-		border-top: 8px solid #f0f0f0;
-    	height: 9px;
-	}
-	header .col.col1 {
-	    width: 315px;
-	    margin-right: 20px;
-	}
-	header .col.col2 {
-	    width: 413px;
-	}
-        #main-nav ul {
-            margin-top: 0;
-        }
-        header .methods .method.tel li.header-contact-tel {
-            background-size: 32px auto;
-            font-size: 26px;
-            padding: 2px 0 0 40px;
-        }
-        header .header-book-buttons {
-            width: 190px;
-        }
-	header .header-book-buttons .booknow {
-	    margin-right: 13px;
-	}
-	header .quicklinks img{
-		margin-bottom: 7px;
-	}
-        .home-contact-video .col{
-            margin-right: 2%;
-        }
-        .home-contact-video .col1 {
-            width: 48%;
-        }
-        .home-contact-video .col2 h3{
-            font-size: 17px;
-        }
-	section#slider .video{
-		margin-top: 35px;
-	}
-	.flexslider .flex-next{
-		top: 110px;
-		right: 0;
-	}
-	.flexslider .flex-prev{
-		top: 110px;
-		left: 0;
-	}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .center {
+        width: 748px;
+    }
 
-	main .center{
-		background: url('../images/bg-748.png');
-	}
-	main .col.col2 .widget_search form{
-		width: 195px;
+    #htopbar {
+        border-top: 8px solid #f0f0f0;
+        height: 9px;
+    }
+
+    header .col.col1 {
+        width: 315px;
+        margin-right: 20px;
+    }
+
+    header .col.col2 {
+        width: 413px;
+    }
+
+    #main-nav ul {
+        margin-top: 0;
+    }
+
+    header .methods .method.tel li.header-contact-tel {
+        background-size: 32px auto;
+        font-size: 26px;
+        padding: 2px 0 0 40px;
+    }
+
+    header .header-book-buttons {
+        width: 190px;
+    }
+
+    header .header-book-buttons .booknow {
+        margin-right: 13px;
+    }
+
+    header .quicklinks img {
+        margin-bottom: 7px;
+    }
+
+    .home-contact-video .col {
+        margin-right: 2%;
+    }
+
+    .home-contact-video .col1 {
+        width: 48%;
+    }
+
+    .home-contact-video .col2 h3 {
+        font-size: 17px;
+    }
+
+    section#slider .video {
+        margin-top: 35px;
+    }
+
+    .flexslider .flex-next {
+        top: 110px;
+        right: 0;
+    }
+
+    .flexslider .flex-prev {
+        top: 110px;
+        left: 0;
+    }
+
+    main .center {
+        background: url('../images/bg-748.png');
+    }
+
+    main .col.col2 .widget_search form {
+        width: 195px;
         background-size: 100% 37px;
-	}
-	main .col.col2 .widget_search form input[type="text"]{
-		width: 151px;
-	}
-	main .col.col2 .widget_search form input[type="submit"]{
-		background: url("../images/searchbg.png") no-repeat scroll -238px 0 transparent;
-	    display: block;
-	    height: 34px;
-	    right: -15px;
-	    top: 0;
-	    width: 32px;
-	}
+    }
 
-	#text-5 img {
-	    width: 34px;
-	}
-	main .col.col2 h2 {
-	    font-size: 19px;
-	}
-	main .col.col2 .rightlinks a{
-		font-size: 16px;
-	}
-	main .col.col2 #quoterotator{
-		background-size: 100% 100%;
-		height: 200px;
-	}
-	main .col.col2 #quoterotator #quoteauthor{
-		font-size: 10px;
-	}
-	h1, .entry-title{
-		font-size: 28px;
-	}
-	section#homeboxes h1 a {
-	    font-size: 15px;
-	}
-	section#homeboxes a{
-		font-size: 10px;
-	}
-	section#homeboxes a.full {
-	    font-size: 13px;
-	}
-	.homebox-ot{
-		width: 410px;
-	}
-        
+    main .col.col2 .widget_search form input[type="text"] {
+        width: 151px;
+    }
+
+    main .col.col2 .widget_search form input[type="submit"] {
+        background: url("../images/searchbg.png") no-repeat scroll -238px 0 transparent;
+        display: block;
+        height: 34px;
+        right: -15px;
+        top: 0;
+        width: 32px;
+    }
+
+    #text-5 img {
+        width: 34px;
+    }
+
+    main .col.col2 h2 {
+        font-size: 19px;
+    }
+
+    main .col.col2 .rightlinks a {
+        font-size: 16px;
+    }
+
+    main .col.col2 #quoterotator {
+        background-size: 100% 100%;
+        height: 200px;
+    }
+
+    main .col.col2 #quoterotator #quoteauthor {
+        font-size: 10px;
+    }
+
+    h1, .entry-title {
+        font-size: 28px;
+    }
+
+    section#homeboxes h1 a {
+        font-size: 15px;
+    }
+
+    section#homeboxes a {
+        font-size: 10px;
+    }
+
+    section#homeboxes a.full {
+        font-size: 13px;
+    }
+
+    .homebox-ot {
+        width: 410px;
+    }
+
 
 }
-@media screen and (max-width: 959px){
-	footer {
-	    padding-bottom: 10px;
-	}
-	footer .center {
-	    background-position: 44px bottom;
-	}
-	footer .orange {
-	    border-radius: 0;
-	    height: auto;
-	    margin-bottom: 15px;
-	    position: static;
-	    width: 100%;
-	}
-	footer .footer-orrage-logo {
-	    float: left;
-	    width: 378px;
-	}
-	footer .orange ul {
-	    float: right;
-	    margin: 0;
-	    padding: 29px 0 15px;
-	    text-align: right;
-	    width: 370px;
-	}
-	footer .orange li {
-	    display: inline-block;
-	    margin: 0 10px;
-	}
 
-	footer .info {
-	    width: 100%;
-	}
-	footer .info ul {
-	    float: none;
-	    text-align: center;
-	}
-	footer .info li {
-	    display: inline-block;
-	    float: none;
-	}
-	footer .info .accreds {
-	    text-align: center;
-	}
-	footer .info p {
-	    text-align: center;
-	}
-	footer .info .copyright {
-	    text-align: center;
-	}
+@media screen and (max-width: 959px) {
+    footer {
+        padding-bottom: 10px;
+    }
 
-	footer .info .accreds {
-	    text-align: center;
-	}
-	footer .info p {
-	    text-align: center;
-	}
-	footer .info .copyright {
-	    text-align: center;
-	}
-}
-@media screen and (min-width: 640px) and (max-width: 767px){
-	.center {
-		width: 620px;
-	}
-	main .center{
-		background: transparent;
-	}
-	header .center .col {
-	    float: none;
-	    width: 100%;
+    footer .center {
+        background-position: 44px bottom;
+    }
+
+    footer .orange {
+        border-radius: 0;
+        height: auto;
+        margin-bottom: 15px;
+        position: static;
+        width: 100%;
+    }
+
+    footer .footer-orrage-logo {
+        float: left;
+        width: 378px;
+    }
+
+    footer .orange ul {
+        float: right;
+        margin: 0;
+        padding: 29px 0 15px;
+        text-align: right;
+        width: 370px;
+    }
+
+    footer .orange li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    footer .info {
+        width: 100%;
+    }
+
+    footer .info ul {
+        float: none;
         text-align: center;
-	}
-	header .quicklinks span {
-	    margin-bottom: 8px;
-	}
-        header .quicklinks span {
-            display: inline-block;
-            float: none;
-            vertical-align: middle;
-        }
-	header .quicklinks a {
-	    display: inline-block;
-	    margin: 0 0 0 5px;
-            vertical-align: middle;
-	}
-	header .contact {
-	    margin-top: 0;
-	}
-	header .contact .accredits {
-	    text-align: center;
-	}
-	header .contact .link {
-	    text-align: center;
-	}
-	header .methods {
-	    text-align: center;
-	    padding-top: 10px;
-	}
-	header .methods .method {
-	    display: inline;
-	    float: none;
-	}
-	header .methods .method li {
-	    display: inline-block;
-	    margin: 0 0 10px;
-	}
-	header .header-book-buttons {
-		bottom: auto;
-		position: absolute;
-		right: 0;
-		left: 0;
-		text-align: center;
-		margin: 0 auto;
-		top: 60px;
-	}
+    }
 
-	#mian-menu-icon-mobile{
-		display: block;
-	}
-	.flexslider .flex-prev {
-	    opacity: .7;
-	    left: 0;
-	    top: 100px;
-	}
-	.flexslider .flex-next{
-		opacity: .7;
-	    right: 0;
-	    top: 100px;
-	}
+    footer .info li {
+        display: inline-block;
+        float: none;
+    }
 
-	section#slider {
-	    height: auto;
-	}
-	section#slider .video {
-	    margin-top: 22px;
-	}
+    footer .info .accreds {
+        text-align: center;
+    }
 
-        .home-contact-video .col2 h3{
-            font-size: 14px
-        }
-	main .center .col {
-	    margin: 0;
-	    width: 100%;
-	}
-	section#homeboxes h1 a {
-	    font-size: 18px;
-	}
-	section#homeboxes a.full {
-	    font-size: 17px;
-	}
-	main .col.col2 .widget_search form {
-	    margin: 0 auto;
-	    width: 269px;
-	}
-	#text-5 .textwidget {
-	    text-align: center;
-	}
-	main .col.col2 h2 {
-	    text-align: center;
-	}
-	main .col.col2 #quoterotator {
-	    width: 250px;
-	    margin: 15px auto;
-	}
-	main .col.col2 .rightlinks {
-	    text-align: center;
-	}
+    footer .info p {
+        text-align: center;
+    }
 
-	footer .center {
-	    background-position: 21px bottom;
-	    background-size: 390px auto;
-	}
-	footer .orange {
-	    padding-top: 25px;
-	}
-	footer .footer-orrage-logo {
-	    float: none;
-	    margin: 0 auto;
-	}
-	footer .orange ul {
-	    display: block;
-	    float: none;
-	    margin: 0;
-	    padding: 10px 0;
-	    text-align: center;
-	    width: 100%;
-	}
-	footer .orange li {
-	    margin: 0 6px 0 0;
-	}
-	footer .info .accreds {
-	    text-align: center;
-	}
-	footer .info .contactus {
-	    text-align: center;
-	}
-        .tpd-content{max-width: 460px;}
+    footer .info .copyright {
+        text-align: center;
+    }
+
+    footer .info .accreds {
+        text-align: center;
+    }
+
+    footer .info p {
+        text-align: center;
+    }
+
+    footer .info .copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    .center {
+        width: 620px;
+    }
+
+    main .center {
+        background: transparent;
+    }
+
+    header .center .col {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .quicklinks span {
+        margin-bottom: 8px;
+    }
+
+    header .quicklinks span {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+
+    header .quicklinks a {
+        display: inline-block;
+        margin: 0 0 0 5px;
+        vertical-align: middle;
+    }
+
+    header .contact {
+        margin-top: 0;
+    }
+
+    header .contact .accredits {
+        text-align: center;
+    }
+
+    header .contact .link {
+        text-align: center;
+    }
+
+    header .methods {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    header .methods .method {
+        display: inline;
+        float: none;
+    }
+
+    header .methods .method li {
+        display: inline-block;
+        margin: 0 0 10px;
+    }
+
+    header .header-book-buttons {
+        bottom: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: 0 auto;
+        top: 60px;
+    }
+
+    #mian-menu-icon-mobile {
+        display: block;
+    }
+
+    .flexslider .flex-prev {
+        opacity: .7;
+        left: 0;
+        top: 100px;
+    }
+
+    .flexslider .flex-next {
+        opacity: .7;
+        right: 0;
+        top: 100px;
+    }
+
+    section#slider {
+        height: auto;
+    }
+
+    section#slider .video {
+        margin-top: 22px;
+    }
+
+    .home-contact-video .col2 h3 {
+        font-size: 14px
+    }
+
+    main .center .col {
+        margin: 0;
+        width: 100%;
+    }
+
+    section#homeboxes h1 a {
+        font-size: 18px;
+    }
+
+    section#homeboxes a.full {
+        font-size: 17px;
+    }
+
+    main .col.col2 .widget_search form {
+        margin: 0 auto;
+        width: 269px;
+    }
+
+    #text-5 .textwidget {
+        text-align: center;
+    }
+
+    main .col.col2 h2 {
+        text-align: center;
+    }
+
+    main .col.col2 #quoterotator {
+        width: 250px;
+        margin: 15px auto;
+    }
+
+    main .col.col2 .rightlinks {
+        text-align: center;
+    }
+
+    footer .center {
+        background-position: 21px bottom;
+        background-size: 390px auto;
+    }
+
+    footer .orange {
+        padding-top: 25px;
+    }
+
+    footer .footer-orrage-logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    footer .orange ul {
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .orange li {
+        margin: 0 6px 0 0;
+    }
+
+    footer .info .accreds {
+        text-align: center;
+    }
+
+    footer .info .contactus {
+        text-align: center;
+    }
+
+    .tpd-content {
+        max-width: 460px;
+    }
 
     .home-banner-title {
         font-size: 16px;
         margin-bottom: 11px;
     }
-.home-contact-video .col2 {
-    float: none;
-    margin-right: 0;
-    width: auto;
-}
-.hb-more-courses {
-    margin-bottom: 12px;
-}
-.hb-more-courses a {
-    font-size: 20px;
-    margin-left: 0;
-}
-    
+
+    .home-contact-video .col2 {
+        float: none;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .hb-more-courses {
+        margin-bottom: 12px;
+    }
+
+    .hb-more-courses a {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
     .banner-content-box-inner ul li a {
         font-size: 18px;
     }
+
     .banner-content-box-inner ul li a img {
         height: 18px;
     }
 }
-@media screen and (max-width: 639px){
-    .home-contact-video .center{
+
+@media screen and (max-width: 639px) {
+    .home-contact-video .center {
         padding-bottom: 20px;
     }
+
     .home-contact-video .col {
         float: none;
         padding-top: 1px;
         width: auto !important;
     }
-    .home-contact-video .col2 h3{
+
+    .home-contact-video .col2 h3 {
         text-align: center;
     }
 
@@ -488,17 +602,21 @@
         float: none;
         vertical-align: middle;
     }
+
     header .quicklinks a {
         display: inline-block;
         margin: 0 0 0 5px;
         vertical-align: middle;
-	}
+    }
+
     header .quicklinks {
         margin-bottom: 15px;
     }
+
     header .quicklinks img {
         float: none;
     }
+
     header .contact .accredits,
     header .contact .link {
         text-align: center;
@@ -508,16 +626,19 @@
         text-align: center;
         font-size: 30px;
     }
-    #mian-menu-icon-mobile{
-            display: block;
+
+    #mian-menu-icon-mobile {
+        display: block;
     }
+
     .flexslider .flex-prev {
         opacity: .7;
         left: 0;
         top: 100px;
     }
-    .flexslider .flex-next{
-            opacity: .7;
+
+    .flexslider .flex-next {
+        opacity: .7;
         right: 0;
         top: 100px;
     }
@@ -525,42 +646,52 @@
     section#slider {
         height: auto;
     }
+
     section#slider .video {
         margin-top: 22px;
     }
+
     main .col.col2 .widget_search form {
         margin: 0 auto;
         width: 269px;
     }
+
     #text-5 .textwidget {
         text-align: center;
     }
+
     main .col.col2 h2 {
         text-align: center;
     }
+
     main .col.col2 #quoterotator {
         width: 250px;
         margin: 15px auto;
     }
+
     main .col.col2 .rightlinks {
         text-align: center;
     }
 
     footer .center {
         background-position: 7px bottom;
-    background-size: 315px auto;
+        background-size: 315px auto;
     }
+
     footer .info {
         height: 200px;
         width: 100%;
     }
+
     footer .orange {
         padding-top: 25px;
     }
+
     footer .footer-orrage-logo {
         float: none;
         margin: 0 auto;
     }
+
     footer .orange ul {
         display: block;
         float: none;
@@ -569,23 +700,28 @@
         text-align: center;
         width: 100%;
     }
+
     footer .orange li {
         margin: 0 6px 0 0;
     }
+
     footer .info .accreds {
         text-align: center;
     }
+
     footer .info .contactus {
         text-align: center;
     }
+
     .homebox-ot {
         width: 453px;
         height: auto;
     }
 
     .center {
-            width: 540px;
+        width: 540px;
     }
+
     main .center .col {
         margin: 0;
         width: 100%;
@@ -598,52 +734,66 @@
     section#homeboxes a.full {
         font-size: 14px;
     }
-	header .header-book-buttons {
-		bottom: auto;
-		position: absolute;
-		right: 0;
-		left: 0;
-		text-align: center;
-		margin: 0 auto;
-		top: 60px;
-	}
+
+    header .header-book-buttons {
+        bottom: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: 0 auto;
+        top: 60px;
+    }
+
     .tts-admin-pcc,
-    .tts-admin-ppbb .administrate-checkout-payment-option-cc{
+    .tts-admin-ppbb .administrate-checkout-payment-option-cc {
         width: 100%;
     }
-    .tts-admin-ppbb #administrate-checkout-payment-processor-paypal input[type="image"]{
+
+    .tts-admin-ppbb #administrate-checkout-payment-processor-paypal input[type="image"] {
         float: none;
     }
-    .tpd-content{max-width: 460px;}
+
+    .tpd-content {
+        max-width: 460px;
+    }
 
     .home-banner-title {
         font-size: 19px;
         line-height: 24px;
     }
+
     .banner-content-box-inner ul li a {
         font-size: 16px;
     }
+
     .banner-content-box-inner ul li a img {
         height: 16px;
     }
+
     .hb-course-links {
         width: 245px;
     }
+
     .hb-arrow-link {
         width: 85px;
         margin-top: 0;
     }
-    .hb-more-courses{
+
+    .hb-more-courses {
         margin-bottom: 10px;
     }
+
     .hb-more-courses a {
         font-size: 22px;
         margin: 0;
     }
+
     .hb-more-courses {
         text-align: center;
         margin-bottom: 10px;
     }
+
     .clearfix::after {
         clear: both;
         content: " ";
@@ -652,126 +802,154 @@
         height: 0;
         visibility: hidden;
     }
+
     .home-banner-wrap {
         margin: 0;
         padding: 15px 0 0;
     }
-    .banner-content-box-inner ul li{margin-bottom: 3px;}
+
+    .banner-content-box-inner ul li {
+        margin-bottom: 3px;
+    }
 }
 
-@media screen and (max-width: 567px){
-    .hb-arrow-link{
+@media screen and (max-width: 567px) {
+    .hb-arrow-link {
         display: none;
     }
-	.center {
-		width: 90%;
-	}
 
-	header .center {
-		padding-top: 120px;
-	}
-	header .header-book-buttons {
-	    bottom: auto;
-	    position: absolute;
-	    right: 0;
-		left: 0;
-	    text-align: center;
-		margin: 0 auto;
-		top: 60px;
-	}
+    .center {
+        width: 90%;
+    }
 
-	header .methods .method {
-	    display: block;
-	    text-align: center;
-	    float: none;
-	    margin-bottom: 10px;
-	}
-	header .methods .method li {
-	    display: inline-block;
-	}
-	main .center .col {
-	    margin: 0;
-	    width: 100%;
-	}
+    header .center {
+        padding-top: 120px;
+    }
 
-	section#homeboxes .box {
-	    float: none;
-	    margin: 0 0 25px;
-	    width: 100%;
-	}
-	.home-rowenaphoto{
-		float: none;
-	}
-	section#slider .video{
-		margin-top: 1px;
-	}
-	.flexslider .flex-prev,.flexslider .flex-next{
-		top: 68px;
-	}
-	footer .footer-orrage-logo{
-		width: auto;
-		background-position: center top;
-	}
-	footer .center {
-	    background-position: center bottom;
-	    background-size: 232px auto;
-	    padding-bottom: 65px;
-	}
-	footer .info {
-	    height: auto;
-	    width: 100%;
-	}
-        
+    header .header-book-buttons {
+        bottom: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: 0 auto;
+        top: 60px;
+    }
+
+    header .methods .method {
+        display: block;
+        text-align: center;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    header .methods .method li {
+        display: inline-block;
+    }
+
+    main .center .col {
+        margin: 0;
+        width: 100%;
+    }
+
+    section#homeboxes .box {
+        float: none;
+        margin: 0 0 25px;
+        width: 100%;
+    }
+
+    .home-rowenaphoto {
+        float: none;
+    }
+
+    section#slider .video {
+        margin-top: 1px;
+    }
+
+    .flexslider .flex-prev, .flexslider .flex-next {
+        top: 68px;
+    }
+
+    footer .footer-orrage-logo {
+        width: auto;
+        background-position: center top;
+    }
+
+    footer .center {
+        background-position: center bottom;
+        background-size: 232px auto;
+        padding-bottom: 65px;
+    }
+
+    footer .info {
+        height: auto;
+        width: 100%;
+    }
+
     .course-stiker-img, .course-traingin-status img {
         width: 100%;
     }
-    #tts-course-wrap{
+
+    #tts-course-wrap {
         padding-bottom: 0;
     }
-    .course-box{
-        width:100%!important;
-        margin-right:0!important;
-        min-height: auto!important;
+
+    .course-box {
+        width: 100% !important;
+        margin-right: 0 !important;
+        min-height: auto !important;
     }
+
     header .quicklinks span {
         display: block;
         margin-bottom: 10px;
     }
+
     header .quicklinks img {
         margin-bottom: 10px;
     }
-    .tpd-content{max-width: 320px;}
+
+    .tpd-content {
+        max-width: 320px;
+    }
 
     .banner-women-image, .banner-women-hand {
         display: none;
     }
+
     .home-banner-wrap {
         margin: 0;
         padding: 15px 0;
     }
+
     .banner-content-box {
         border-width: 7px;
         padding: 10px 20px;
     }
+
     .home-banner-title {
         margin: 0;
         font-size: 18px;
         text-align: center;
         line-height: 30px;
     }
+
     .hb-course-links {
         float: none;
         margin: 0 auto;
         width: 245px;
     }
+
     .course-trainer-photo, .course-trainer-description {
         float: none;
         padding: 0;
         width: auto;
     }
+
     .course-trainer-photo {
         text-align: left;
     }
+
     .course-benefits-list {
         display: block;
     }
@@ -779,6 +957,7 @@
     .course-benefits-list-inner {
         display: block;
     }
+
     .cours-benefit {
         display: block;
         margin-bottom: 50px;
@@ -792,6 +971,7 @@
         top: 10px;
         width: 18px;
     }
+
     .course-testimonials .tts-qoute-icon-2 {
         background-size: contain;
         height: 18px;
@@ -809,12 +989,14 @@
         font-size: 18px;
         line-height: 24px;
     }
+
     .course-testimonials .course-testimonial-author-image {
         height: 50px;
         margin: 0 0 0 35px;
         padding-bottom: 20px;
         position: static;
     }
+
     .course-testimonial-author-image > img {
         height: auto;
         max-height: 100%;
@@ -825,7 +1007,7 @@
     }
 }
 
-@media screen and (max-width: 959px) and (min-width: 768px){
+@media screen and (max-width: 959px) and (min-width: 768px) {
     .home-banner-wrap {
         padding: 88px 0 75px 85px;
     }
@@ -833,11 +1015,13 @@
     .banner-content-box-inner {
         height: 230px;
     }
+
     .home-banner-title {
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 15px;
     }
+
     .home-contact-video .col2 {
         margin-right: 10px;
         width: 325px;
@@ -846,89 +1030,112 @@
     .home-contact-video .col1 {
         width: 208px;
     }
+
     .hb-course-links {
         width: 245px;
     }
+
     .hb-arrow-link {
         width: 75px;
     }
+
     .banner-content-box-inner ul li a {
         font-size: 16px;
         line-height: 16px;
     }
+
     .banner-content-box-inner ul li a img {
         height: 18px;
     }
+
     .banner-content-box-inner ul li a span {
         font-size: 14px;
     }
+
     .hb-more-courses {
         padding-top: 24px;
     }
+
     .hb-more-courses a {
         font-size: 20px;
     }
+
     .responsive-embed-contianer {
         padding-bottom: 64.25%;
     }
 }
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 767px) {
     .home-banner-wrap {
         padding: 87px 0 75px 85px;
         height: auto;
     }
+
     .banner-arrow1 {
         bottom: -24px;
     }
+
     .banner-content-box-inner {
         height: auto;
     }
+
     .home-contact-video .col2 {
         margin-right: 0;
         width: auto;
         float: none;
     }
+
     .home-contact-video .col1 {
         margin-right: 0;
         width: 100%;
         float: none;
     }
+
     .responsive-embed-contianer {
         padding-bottom: 40.25%;
     }
+
     .home-contact-video .col2 h3 {
         font-size: 25px;
     }
+
     .banner-arrow2 {
         bottom: -63px;
         top: auto;
     }
+
     .banner-content-box .banner-arrow1 {
         right: auto;
         margin-left: 3px;
         bottom: -20px;
     }
-	header .methods .method.tel,
-	.tbs-header-cart-summery-wrap{
-		text-align: center;
-	}
-	.header-book-online-button {
-		text-align: center;
-		margin: 0 0 20px;
-	}
-	.tbs-header-cart-summery-wrap {
-		margin: 0;
-		padding: 0 0 20px;
-	}
+
+    header .methods .method.tel,
+    .tbs-header-cart-summery-wrap {
+        text-align: center;
+    }
+
+    .header-book-online-button {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+
+    .tbs-header-cart-summery-wrap {
+        margin: 0;
+        padding: 0 0 20px;
+    }
 }
-@media screen and (max-width: 479px){
+
+@media screen and (max-width: 479px) {
     #mobile-searchbar {
         width: 155px;
     }
+
     #mobile-searchbar form {
         background-size: 100% auto;
         margin-top: 15px;
     }
+
     #mobile-searchbar form input[type="text"] {
         width: 120px;
         height: 16px;
