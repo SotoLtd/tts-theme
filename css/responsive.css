@@ -11,7 +11,7 @@
 }
 @media screen and (min-width: 768px){
 	#main-nav {
-		margin-top: 18px;
+		margin-top: 0;
 	}
     .tts-desktop{
         display: block;

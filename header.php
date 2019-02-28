@@ -77,20 +77,15 @@
 					<?php echo do_shortcode("[smartblock id=339]"); ?>
                     <div class="clear"></div>
                 </div>
+	            <?php if( !function_exists( 'tbs_is_manual_booking_form_page' ) || !tbs_is_manual_booking_form_page() ): ?>
+                    <div class="header-book-online-button">
+                        <a title="" href="<?php echo get_permalink(361); ?>">Book online</a>
+                    </div>
+	            <?php endif; ?>
 				<div class="tbs-header-cart-summery-wrap">
 					<?php if( function_exists('tbs_header_cart_summery') ){tbs_header_cart_summery();} ?>
 				</div>
             </div>
-            <div class="clear"></div>
-            <div class="quicklinks tts-desktop">
-                <?php echo do_shortcode("[smartblock id=375]"); ?>
-                <div class="clear"></div>
-            </div>
-			<?php if( !function_exists( 'tbs_is_manual_booking_form_page' ) || !tbs_is_manual_booking_form_page() ): ?>
-            <div class="header-book-buttons">
-                <a title="" href="<?php echo get_permalink(361); ?>"><img alt="book now - link to course dates" src="<?php echo get_stylesheet_directory_uri(); ?>/images/btn-book-online.png"></a>
-            </div>
-			<?php endif; ?>
             <div class="clear"></div>
             <nav id="main-nav">
                             <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary', 'menu_class' => 'menu clearfix' ) ); ?>
