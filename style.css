@@ -3721,8 +3721,12 @@ body .tbs-wc-page-content form .form-row label {
     box-sizing: border-box;
 }
 
-#tts-atc-lightbox-content h3 {
+#tts-atc-lightbox-content .tts-atc-lightbox-title {
     color: #000;
+    font-weight: normal;
+    font-family: UniversLTBoldCon;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 1.6em;
     text-align: center;
