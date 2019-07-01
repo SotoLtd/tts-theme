@@ -42,8 +42,9 @@ get_header(); ?>
 
 			</div>
 
-		</section>	
+		</section>
 
+		<?php get_template_part ( '/partials/home/home-logos' ); ?>
 
 		<section>
 
@@ -90,12 +91,6 @@ get_header(); ?>
 				</div>		
 			</div>	
 
-			<div class="five-twelfths contact-form">
-
-				<h3>Quick enquiry</h3>
-				<?php echo do_shortcode( '[contact-form-7 id="232" title="Quick enquiry"]' ); ?>
-
-			</div>	
 		
 		</section>		
 

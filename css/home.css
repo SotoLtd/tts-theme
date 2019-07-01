@@ -178,6 +178,40 @@ section:first-of-type {
 
 
 /* 5. HOME                           */
+/* Home Logos*/
+.row.tts-home-logos-row {
+    padding: 0;
+    margin: 0;
+}
+.tts-home-logos-wrap {
+    margin: 0;
+    width: 100%;
+}
+.tts-home-logos-title {
+    margin: 0 0 20px;
+}
+
+.tts-home-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0 -14px;
+    padding: 0;
+}
+.tts-home-logos li {
+    margin: 0 14px 30px;
+}
+.tts-home-logos li a {
+    text-decoration: none;
+}
+.tts-home-logos li img {
+    width: auto;
+    max-height: 69px;
+}
+
+
 ul.popular-courses {
     margin-top: 15px;
 }
