@@ -63,7 +63,9 @@
     </div>
 	<div class="center">
             <div class="col col1">
-                <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" class="logo" /></a>
+                <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="https://thetrainingsocieti.co.uk/wp-content/uploads/2019/05/black-optimised-1.png" class="logo" /></a>
+<!-- 				https://thetrainingsocieti.co.uk/wp-content/uploads/2019/05/black-optimised-1.png 
+				<?php echo get_template_directory_uri(); ?>/images/logo.png SEE TAT revert to backup before 30th May 2019-->
 				<div class="quicklinks tts-mobile">
                     <?php echo do_shortcode("[smartblock id=375]"); ?>
                     <div class="clear"></div>
