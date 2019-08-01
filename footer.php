@@ -29,6 +29,12 @@
     </div>
 </footer>
 
+<div class="course-enquiry-form">
+    <h5 class="course-ef-title">Enquire</h5>
+    <div class="course-efwrap">
+		<?php echo do_shortcode('[contact-form-7 id="2057" title="Course Quick Enquiry"]'); ?>
+    </div>
+</div>
 <script src="<?php echo get_template_directory_uri(); ?>/js/flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
 
 <script>
@@ -211,40 +217,6 @@ var google_remarketing_only = false;
 </noscript>
 <?php }?>
 
-<!-- Google Code for Remarketing Tag -->
-
-<!--------------------------------------------------
-
-Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
-
---------------------------------------------------->
-
-<script type="text/javascript">
-
-/* <![CDATA[ */
-
-var google_conversion_id = 1005052345;
-
-var google_custom_params = window.google_tag_params;
-
-var google_remarketing_only = true;
-
-/* ]]> */
-
-</script>
-
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-
-</script>
-
-<noscript>
-
-<div style="display:inline;">
-
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1005052345/?value=0&amp;guid=ON&amp;script=0"/>
-
-</div>
-</noscript>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>

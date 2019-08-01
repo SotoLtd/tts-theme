@@ -3,4 +3,6 @@
         e.preventDefault();
         FB && FB.CustomerChat && FB.CustomerChat.showDialog();
     });
-})(jQuery);
+    $(window).load(function () {
+        $("body").addClass("tts-app-loaded");
+    });})(jQuery);

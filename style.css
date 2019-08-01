@@ -187,7 +187,7 @@ a img {
 }
 
 .screen-reader-text:focus {
-    background-color: #f1f1f1;
+    background-color: #fafafa;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
@@ -308,7 +308,7 @@ object {
 -------------------------------------------------------------- */
 
 body {
-    background: #f0f0f0;
+    background: #fafafa;
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: 'UniversLTStdCon', Arial, Helvetica;
@@ -2651,8 +2651,8 @@ h1.course-title {
     border-radius: 0;
     color: #f34700;
     font-family: UniversLTBoldCon;
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 38px;
     border-bottom: 1px solid #000;
     margin: 0 0 20px;
     padding-bottom: 15px;
@@ -2685,10 +2685,9 @@ h1.course-title {
 .course-sbelement h4 {
     color: #ff5300;
     font-family: UniversLTStdCon;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
     margin: 0 0 15px;
-    text-transform: uppercase;
 }
 
 .course-sbelement.course-duration h4 p {
@@ -2959,7 +2958,7 @@ h1.course-title {
     box-sizing: border-box;
     padding: 10px;
     position: fixed;
-    right: -260px;
+    right: -305px;
     top: 10%;
     width: 260px;
     z-index: 9999;
@@ -2967,7 +2966,9 @@ h1.course-title {
     -moz-transition: right .4s ease-in-out;
     -webkit-transition: right .4s ease-in-out;
 }
-
+.tts-app-loaded .course-enquiry-form {
+    right: -260px;
+}
 .course-enquiry-form-revealed .course-enquiry-form {
     right: 0;
 }
