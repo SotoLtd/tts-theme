@@ -385,7 +385,7 @@ textarea, input[type="text"], input[type="email"], input[type="tel"] {
 
 .button-with-arrow,
 input[type="submit"] {
-    background: #ff6600 url('images/arrowdd.png') no-repeat right center !important;
+    background: #069b26 url('images/arrowdd.png') no-repeat right center !important;
     border: 0 none;
     border-radius: 5px;
     box-sizing: border-box;
@@ -397,6 +397,22 @@ input[type="submit"] {
     padding: 6px 44px 6px 20px !important;
     text-transform: uppercase;
 }
+
+div.coupon input[type="submit"]{
+    text-transform: none!important;
+    background-color: #fff!important;
+    border: 1px solid #d3ced2;
+    color: #757575!important;
+}
+
+
+
+a.tts-button.tts-atc-ligtbox-close {
+background-color:#069b2699!important;
+}
+
+
+
 
 .widget input[type="submit"] {
     width: 100%;
@@ -419,6 +435,38 @@ img {
 .clearfix {
     display: inline-block;
 }
+
+
+/* Accreditations */
+.tts-accreditation-logos-wrap {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.home .tts-accreditation-logos-wrap {
+    padding-bottom: 0;
+}
+.tts-accreditation-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tts-accreditation-logos li {
+        margin: 0 0 30px;
+}
+.tts-accreditation-logos li a {
+    text-decoration: none;
+}
+.tts-accreditation-logos li img {
+    width: auto;
+    max-height: 69px;
+}
+
 
 /* clearfix for ie7 */
 .clearfix {
@@ -1305,7 +1353,7 @@ footer .info .copyright span {
 }
 
 .footer-social-icons img {
-    width: 30px;
+    width: 46px;
     height: auto;
 }
 
@@ -3190,8 +3238,9 @@ body .woocommerce a.button,
 body .woocommerce button.button,
 body .woocommerce input.button {
     color: #fff;
-    background-color: #e95a0c !important;
+    background-color: #069b2699 !important;
 }
+
 
 body .woocommerce #respond input#submit.disabled,
 body .woocommerce #respond input#submit:disabled,
@@ -3218,7 +3267,7 @@ body .woocommerce input.button:hover {
 #add_payment_method .wc-proceed-to-checkout a.checkout-button,
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
 .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
-    background-color: #e95a0c !important;
+    background-color: #069b26 !important;
 }
 
 .woocommerce-checkout h3 {
@@ -3262,6 +3311,12 @@ body .woocommerce input.button:hover {
     text-decoration: none;
 }
 
+.woocommerce form .form-row-last {
+    float: none!important;
+    }
+.woocommerce-page form .form-row-last {
+   float: none!important;
+}
 .woocommerce-error li,
 .woocommerce-info li,
 .woocommerce-message li {
@@ -3412,7 +3467,8 @@ body .woocommerce-checkout .select2-container--default .select2-selection--singl
     height: 28px;
     border-radius: 4px;
     height: 28px;
-    padding: 0 8px
+    padding: 0 8px;
+    font-family: 'UniversLTStdCon', Arial, Helvetica;
 }
 
 body .tbs-wc-page-content input.button {
@@ -3421,10 +3477,29 @@ body .tbs-wc-page-content input.button {
     margin-top: 21px;
 }
 
+div.coupon input.button {
+    background-color: #fff!important;
+    padding: 15px 15px 15px !important;
+}
+
+
+.woocommerce form .form-row  {
+    max-width: 350px;
+    display: block;
+}
+
+.form-divider {
+    border-top: 2px solid #ccc;
+    margin-top: 30px!important;
+    padding-top: 20px!important;
+}
+
 .tbs-wc-page-content .woocommerce-MyAccount-content a {
     color: #e95a0c;
     text-decoration: none;
 }
+
+
 
 .tbs-wc-page-content h1 {
     margin: -6px 0 15px;

@@ -10,6 +10,29 @@
  * @since Twenty Ten 1.0
  */
 ?>
+<div class="center">
+    <section class="row">
+        <div class="tts-accreditation-logos-wrap">
+            <div class="tts-accreditation-logos-title">Accredited by:</div>
+                        <ul class="tts-accreditation-logos">
+                            <li>
+                                                    <img src="/wp-content/uploads/2019/09/citb-logo-2.png" alt="">
+                                                </li>
+                                                                                    <li>
+                                                    <img src="/wp-content/uploads/2019/09/PASMA-logo-2.png" alt="">
+                                                </li>
+                                    <li>
+                                                    <img src="/wp-content/uploads/2019/09/IPAF-logo-3.png" alt="">
+                                                </li>
+                                    
+
+
+
+                            </ul>
+        </div>
+
+    </section>
+</div>
 <footer>
 	<div class="center">
     	<div class="orange clearfix">
@@ -29,10 +52,15 @@
     </div>
 </footer>
 
-<div class="course-enquiry-form">
+<?php 
+        if (is_page('basket') || is_page('checkout'))  {
+
+        } 
+        else  { ?>
+            <div class="course-enquiry-form">
     <h5 class="course-ef-title">Enquire</h5>
     <div class="course-efwrap">
-		<?php echo do_shortcode('[contact-form-7 id="2057" title="Course Quick Enquiry"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="2057" title="Course Quick Enquiry"]'); ?>
     </div>
 </div>
 <script src="<?php echo get_template_directory_uri(); ?>/js/flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
@@ -64,33 +92,33 @@ function ttsdebounce(func, wait, immediate) {
             t = t + 50;
             f.css('top', t + "px");
         }
-	function isMobile(w){
-		if(w>$(window).width())
-			return true;
-		else
-			return false;
-	}
+    function isMobile(w){
+        if(w>$(window).width())
+            return true;
+        else
+            return false;
+    }
 
-	$(document).ready(function(){
-		if(isMobile(768)){
-			$('body').removeClass('responsive-desktop');
-		}
-		$(window).resize(function(){
-			if(isMobile(768)){
-				$('body').removeClass('responsive-desktop');
-			}else{
-				$('body').addClass('responsive-desktop');
-			}
-		});
-		$('#mian-menu-icon-mobile').on('click', function(){
-			if($(this).hasClass('mian-menu-icon-shown')){
-				$(this).removeClass('mian-menu-icon-shown');
-				$('#main-nav').slideUp('400');
-			}else{
-				$(this).addClass('mian-menu-icon-shown');
-				$('#main-nav').slideDown('400');
-			}
-		});
+    $(document).ready(function(){
+        if(isMobile(768)){
+            $('body').removeClass('responsive-desktop');
+        }
+        $(window).resize(function(){
+            if(isMobile(768)){
+                $('body').removeClass('responsive-desktop');
+            }else{
+                $('body').addClass('responsive-desktop');
+            }
+        });
+        $('#mian-menu-icon-mobile').on('click', function(){
+            if($(this).hasClass('mian-menu-icon-shown')){
+                $(this).removeClass('mian-menu-icon-shown');
+                $('#main-nav').slideUp('400');
+            }else{
+                $(this).addClass('mian-menu-icon-shown');
+                $('#main-nav').slideDown('400');
+            }
+        });
                 $('.course-ef-title').on('click', function(e){
                     e.preventDefault();
                     $('body').toggleClass('course-enquiry-form-revealed');
@@ -99,31 +127,37 @@ function ttsdebounce(func, wait, immediate) {
                 $(window).resize(ttsdebounce(function(){
                     ttsCourseEF();
                 }, 200));
-	});
-	$(window).load(function() {
+    });
+    $(window).load(function() {
           $('.course-testimonials').flexslider({
                 selector: ".course-testimonials-wrap >.course-testimonial",
                 animation: "slide",
                 controlNav: false,
                 directionNav: true
             });
-	});
-	$(function() {
-		function animateOneWay(el, startStyle, endStyle, duration, repeat){
-			setTimeout(function(){animateOneWay(el, startStyle, endStyle, duration, repeat)}, repeat);
-			el.css(startStyle);
-			el.animate(endStyle, duration, 'linear');
-		}
-		 
-		w = $(document).width();
-		//animateOneWay($('#plane'),{left: w}, {left: -1980}, 24000, 25000);
-		//$('.fc-checkbox input[name*="checkbox-"]:not(:checked)').trigger('click');
-	});
+    });
+    $(function() {
+        function animateOneWay(el, startStyle, endStyle, duration, repeat){
+            setTimeout(function(){animateOneWay(el, startStyle, endStyle, duration, repeat)}, repeat);
+            el.css(startStyle);
+            el.animate(endStyle, duration, 'linear');
+        }
+         
+        w = $(document).width();
+        //animateOneWay($('#plane'),{left: w}, {left: -1980}, 24000, 25000);
+        //$('.fc-checkbox input[name*="checkbox-"]:not(:checked)').trigger('click');
+    });
 
 
 
 })(jQuery);
 </script>
+
+<?php
+        }
+?>
+
+
 
 <?php
 	/* Always have wp_footer() just before the closing </body>

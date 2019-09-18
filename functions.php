@@ -775,3 +775,11 @@ remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
 remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
 remove_action( 'wp_head', 'wp_generator' );
+
+
+add_filter('woocommerce_product_add_to_cart_text', 'wh_archive_custom_cart_button_text');   // 2.1 +
+
+function wh_archive_custom_cart_button_text()
+{
+    return __('Book Course', 'woocommerce');
+}
