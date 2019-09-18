@@ -1305,7 +1305,7 @@ footer .info .copyright span {
 }
 
 .footer-social-icons img {
-    width: 46px;
+    width: 30px;
     height: auto;
 }
 
@@ -3177,7 +3177,7 @@ body .administrate-event-table-sold-out {
 }
 
 .course-date-book-now-wrap a {
-    background-color: #e95a0c;
+    background-color: #1D9C09;
     color: #fff;
     display: inline-block;
     border-radius: 4px;
@@ -3668,7 +3668,7 @@ body .tbs-wc-page-content form .form-row label {
     height: 14px;
     border-radius: 50%;
     border: 3px solid #ccc;
-    border-top-color: #e95a0c;
+    border-top-color: #1D9C09;
     top: 2px;
     animation: tbs-spin 2s linear infinite;
 }

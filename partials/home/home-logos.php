@@ -9,7 +9,7 @@ $home_logos_section_title = trim(get_field( 'home_logos_section_title' ));
 
 if ( $home_logos_enable && have_rows( 'home_logos' ) ):
 	?>
-    <section class="row tts-home-logos-row">
+    <section class="row">
         <div class="tts-home-logos-wrap">
             <?php if($home_logos_section_title): ?>
             <div class="tts-home-logos-title"><?php echo $home_logos_section_title; ?></div>

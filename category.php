@@ -16,7 +16,6 @@ get_header(); ?>
 				<h1 class="page-title"><?php
 					printf( __( ' %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 				?></h1>
-				<p>You can find current and archived newsletters (pdfs): <a href="/newsletter-archive/" rel="nofollow">here</a></p>
 				<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
