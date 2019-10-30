@@ -12,6 +12,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <script async src="//41730.tctm.co/t.js"></script>
+
     <meta charset="<?php bloginfo( 'charset' ); ?>"/>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 
@@ -40,6 +41,7 @@
     <noscript>
         <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1578320215739095&amp;ev=PixelInitialized"/>
     </noscript>
+
 	<?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -98,6 +100,28 @@
 				'theme_location'  => 'primary',
 				'menu_class'      => 'menu clearfix'
 			) ); ?>
+        <div class="courses-nav courses-menu-item">
+
+              <?php wp_nav_menu( array(
+                'container_class' => 'courses-primary',
+                'theme_location'  => 'custom-courses',
+                'menu_class'      => 'menu clearfix'
+              ) ); ?>
+
+              <?php wp_nav_menu( array(
+                'container_class' => 'courses-children',
+                'theme_location'  => 'custom-courses-children',
+                'menu_class'      => 'menu clearfix'
+              ) ); ?>
+
+        </div>
+        <script>
+          $(".courses-menu-item").hover(function(){
+              $(".courses-nav").css("display", "flex");
+            }, function(){
+              $(".courses-nav").css("display", "none");
+            });
+        </script>
             <div class="clear"></div>
         </nav>
     </div>
