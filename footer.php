@@ -13,243 +13,240 @@
 <div class="center">
     <section class="row">
         <div class="tts-accreditation-logos-wrap">
-            <div class="tts-accreditation-logos-title">Accredited by:</div>
-                        <ul class="tts-accreditation-logos">
-                            <li>
-                                                    <img src="/wp-content/uploads/2019/09/citb-logo-2.png" alt="">
-                                                </li>
-                                                                                    <li>
-                                                    <img src="/wp-content/uploads/2019/09/PASMA-logo-2.png" alt="">
-                                                </li>
-                                    <li>
-                                                    <img src="/wp-content/uploads/2019/09/IPAF-logo-3.png" alt="">
-                                                </li>
-                                    
-
-
-
-                            </ul>
+            <div class="tts-accreditation-logos-title">Accredited by</div>
+            <ul class="tts-accreditation-logos">
+                <li>
+                    <img src="/wp-content/uploads/2019/09/citb-logo-2.png" alt="citb logo">
+                </li>
+                <li>
+                    <img src="/wp-content/uploads/2019/09/PASMA-logo-2.png" alt="pasma logo">
+                </li>
+                <li>
+                    <img src="/wp-content/uploads/2019/09/IPAF-logo-3.png" alt="ipaf logo">
+                </li>
+            </ul>
         </div>
 
     </section>
 </div>
 <footer>
-	<div class="center">
-    	<div class="orange clearfix">
-        	<?php echo do_shortcode("[smartblock id=241]"); ?>
+    <div class="center">
+        <div class="orange clearfix">
+			<?php echo do_shortcode( "[smartblock id=241]" ); ?>
         </div>
         <div class="info">
 			<?php if ( has_nav_menu( 'footer-menu' ) ) { /* if menu location 'primary-menu' exists then use custom menu */
-      			wp_nav_menu( array( 'theme_location' => 'footer-menu') ); 
+				wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );
 			} ?>
             <div class="clear"></div>
-			<?php if(empty($_GET['administrate_checkout_event_id'])): ?> 
-            <div class="footer-social-icons"><?php echo do_shortcode("[smartblock id=2359]"); ?></div>
-			<?php endif; ?> 
-            <?php echo do_shortcode("[smartblock id=281]"); ?>
+			<?php if ( empty( $_GET['administrate_checkout_event_id'] ) ): ?>
+                <div class="footer-social-icons"><?php echo do_shortcode( "[smartblock id=2359]" ); ?></div>
+			<?php endif; ?>
+			<?php echo do_shortcode( "[smartblock id=281]" ); ?>
         </div>
         <div class="clear"></div>
     </div>
 </footer>
 
-<?php 
-        if (is_page('basket') || is_page('checkout'))  {
+<?php
+if ( is_page( 'basket' ) || is_page( 'checkout' ) ) {
 
-        } 
-        else  { ?>
-            <div class="course-enquiry-form">
-    <h5 class="course-ef-title">Enquire</h5>
-    <div class="course-efwrap">
-        <?php echo do_shortcode('[contact-form-7 id="2057" title="Course Quick Enquiry"]'); ?>
+} else { ?>
+    <div class="course-enquiry-form">
+        <h5 class="course-ef-title">Enquire</h5>
+        <div class="course-efwrap">
+			<?php echo do_shortcode( '[contact-form-7 id="2057" title="Course Quick Enquiry"]' ); ?>
+        </div>
     </div>
-</div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
 
-<script>
-function ttsdebounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-            var context = this, args = arguments;
-            var later = function() {
+    <script>
+        function ttsdebounce(func, wait, immediate) {
+            var timeout;
+            return function () {
+                var context = this, args = arguments;
+                var later = function () {
                     timeout = null;
                     if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
             };
-            var callNow = immediate && !timeout;
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-            if (callNow) func.apply(context, args);
-    };
-};
-(function($){
-        function ttsCourseEF(){
-            var f = $('.course-enquiry-form'), t, h = f.height() + 50, wh = $(window).height();
-            if(h < wh){
-                t = (wh - h)/2;
-                t = parseInt(t, 10);
-            }else{
-                t = 0;
+        };
+        (function ($) {
+            function ttsCourseEF() {
+                var f = $('.course-enquiry-form'), t, h = f.height() + 50, wh = $(window).height();
+                if (h < wh) {
+                    t = (wh - h) / 2;
+                    t = parseInt(t, 10);
+                } else {
+                    t = 0;
+                }
+                t = t + 50;
+                f.css('top', t + "px");
             }
-            t = t + 50;
-            f.css('top', t + "px");
-        }
-    function isMobile(w){
-        if(w>$(window).width())
-            return true;
-        else
-            return false;
-    }
 
-    $(document).ready(function(){
-        if(isMobile(768)){
-            $('body').removeClass('responsive-desktop');
-        }
-        $(window).resize(function(){
-            if(isMobile(768)){
-                $('body').removeClass('responsive-desktop');
-            }else{
-                $('body').addClass('responsive-desktop');
+            function isMobile(w) {
+                if (w > $(window).width())
+                    return true;
+                else
+                    return false;
             }
-        });
-        $('#mian-menu-icon-mobile').on('click', function(){
-            if($(this).hasClass('mian-menu-icon-shown')){
-                $(this).removeClass('mian-menu-icon-shown');
-                $('#main-nav').slideUp('400');
-            }else{
-                $(this).addClass('mian-menu-icon-shown');
-                $('#main-nav').slideDown('400');
-            }
-        });
-                $('.course-ef-title').on('click', function(e){
+
+            $(document).ready(function () {
+                if (isMobile(768)) {
+                    $('body').removeClass('responsive-desktop');
+                }
+                $(window).resize(function () {
+                    if (isMobile(768)) {
+                        $('body').removeClass('responsive-desktop');
+                    } else {
+                        $('body').addClass('responsive-desktop');
+                    }
+                });
+                $('#mian-menu-icon-mobile').on('click', function () {
+                    if ($(this).hasClass('mian-menu-icon-shown')) {
+                        $(this).removeClass('mian-menu-icon-shown');
+                        $('#main-nav').slideUp('400');
+                    } else {
+                        $(this).addClass('mian-menu-icon-shown');
+                        $('#main-nav').slideDown('400');
+                    }
+                });
+                $('.course-ef-title').on('click', function (e) {
                     e.preventDefault();
                     $('body').toggleClass('course-enquiry-form-revealed');
                 });
                 ttsCourseEF();
-                $(window).resize(ttsdebounce(function(){
+                $(window).resize(ttsdebounce(function () {
                     ttsCourseEF();
                 }, 200));
-    });
-    $(window).load(function() {
-          $('.course-testimonials').flexslider({
-                selector: ".course-testimonials-wrap >.course-testimonial",
-                animation: "slide",
-                controlNav: false,
-                directionNav: true
             });
-    });
-    $(function() {
-        function animateOneWay(el, startStyle, endStyle, duration, repeat){
-            setTimeout(function(){animateOneWay(el, startStyle, endStyle, duration, repeat)}, repeat);
-            el.css(startStyle);
-            el.animate(endStyle, duration, 'linear');
-        }
-         
-        w = $(document).width();
-        //animateOneWay($('#plane'),{left: w}, {left: -1980}, 24000, 25000);
-        //$('.fc-checkbox input[name*="checkbox-"]:not(:checked)').trigger('click');
-    });
+            $(window).load(function () {
+                $('.course-testimonials').flexslider({
+                    selector: ".course-testimonials-wrap >.course-testimonial",
+                    animation: "slide",
+                    controlNav: false,
+                    directionNav: true
+                });
+            });
+            $(function () {
+                function animateOneWay(el, startStyle, endStyle, duration, repeat) {
+                    setTimeout(function () {
+                        animateOneWay(el, startStyle, endStyle, duration, repeat)
+                    }, repeat);
+                    el.css(startStyle);
+                    el.animate(endStyle, duration, 'linear');
+                }
+
+                w = $(document).width();
+                //animateOneWay($('#plane'),{left: w}, {left: -1980}, 24000, 25000);
+                //$('.fc-checkbox input[name*="checkbox-"]:not(:checked)').trigger('click');
+            });
 
 
+        })(jQuery);
+    </script>
 
-})(jQuery);
-</script>
-
-<?php
-        }
+	<?php
+}
 ?>
 
 
 
 <?php
-	/* Always have wp_footer() just before the closing </body>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to reference JavaScript files.
-	 */
+/* Always have wp_footer() just before the closing </body>
+ * tag of your theme, or you will break many plugins, which
+ * generally use this hook to reference JavaScript files.
+ */
 
-	wp_footer();
+wp_footer();
 ?>
-<?php if(is_page(475)){ ?>
-<!-- Google Code for enquiry Conversion Page -->
+<?php if ( is_page( 475 ) ) { ?>
+    <!-- Google Code for enquiry Conversion Page -->
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-/* <![CDATA[ */
+        /* <![CDATA[ */
 
-var google_conversion_id = 1005052345;
+        var google_conversion_id = 1005052345;
 
-var google_conversion_language = "en";
+        var google_conversion_language = "en";
 
-var google_conversion_format = "2";
+        var google_conversion_format = "2";
 
-var google_conversion_color = "ffffff";
+        var google_conversion_color = "ffffff";
 
-var google_conversion_label = "n63UCIefxgoQucOf3wM";
+        var google_conversion_label = "n63UCIefxgoQucOf3wM";
 
-var google_conversion_value = 1.00;
+        var google_conversion_value = 1.00;
 
-var google_conversion_currency = "GBP";
+        var google_conversion_currency = "GBP";
 
-var google_remarketing_only = false;
+        var google_remarketing_only = false;
 
-/* ]]> */
+        /* ]]> */
 
-</script>
+    </script>
 
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 
-</script>
+    </script>
 
-<noscript>
+    <noscript>
 
-<div style="display:inline;">
+        <div style="display:inline;">
 
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1005052345/?value=1.00&amp;currency_code=GBP&amp;label=n63UCIefxgoQucOf3wM&amp;guid=ON&amp;script=0"/>
+            <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1005052345/?value=1.00&amp;currency_code=GBP&amp;label=n63UCIefxgoQucOf3wM&amp;guid=ON&amp;script=0"/>
 
-</div>
+        </div>
 
-</noscript>
-<?php }?>
+    </noscript>
+<?php } ?>
 
-<?php if(is_page(1286)){ ?>
-<!-- Google Code for Sales Page Conversion Page -->
+<?php if ( is_page( 1286 ) ) { ?>
+    <!-- Google Code for Sales Page Conversion Page -->
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-/* <![CDATA[ */
+        /* <![CDATA[ */
 
-var google_conversion_id = 1005052345;
+        var google_conversion_id = 1005052345;
 
-var google_conversion_language = "en";
+        var google_conversion_language = "en";
 
-var google_conversion_format = "3";
+        var google_conversion_format = "3";
 
-var google_conversion_color = "ffffff";
+        var google_conversion_color = "ffffff";
 
-var google_conversion_label = "sK1jCIqyxlsQucOf3wM";
+        var google_conversion_label = "sK1jCIqyxlsQucOf3wM";
 
-var google_conversion_value = 1.00;
+        var google_conversion_value = 1.00;
 
-var google_conversion_currency = "GBP";
+        var google_conversion_currency = "GBP";
 
-var google_remarketing_only = false;
+        var google_remarketing_only = false;
 
-/* ]]> */
+        /* ]]> */
 
-</script>
+    </script>
 
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 
-</script>
+    </script>
 
-<noscript>
+    <noscript>
 
-<div style="display:inline;">
+        <div style="display:inline;">
 
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1005052345/?value=1.00&amp;currency_code=GBP&amp;label=sK1jCIqyxlsQucOf3wM&amp;guid=ON&amp;script=0"/>
+            <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1005052345/?value=1.00&amp;currency_code=GBP&amp;label=sK1jCIqyxlsQucOf3wM&amp;guid=ON&amp;script=0"/>
 
-</div>
+        </div>
 
-</noscript>
-<?php }?>
+    </noscript>
+<?php } ?>
 
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -272,11 +269,11 @@ var google_remarketing_only = false;
 </script>
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
-     attribution=install_email
-     page_id="313446965380984"
-     theme_color="#ff7e29"
-     logged_in_greeting="Hello, how can we help you today ?"
-     logged_out_greeting="Hello, how can we help you today ?">
+        attribution=install_email
+        page_id="313446965380984"
+        theme_color="#ff7e29"
+        logged_in_greeting="Hello, how can we help you today ?"
+        logged_out_greeting="Hello, how can we help you today ?">
 </div>
 </body>
 </html>

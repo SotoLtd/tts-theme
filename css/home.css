@@ -58,6 +58,9 @@ body.home {
     margin-bottom: 10px;
     margin-top: 20px;
 }
+.home section > div > h3 {
+    margin-top: 0;
+}
 
 .home a:link, .home a:visited, .home a:active {
     text-decoration: none;
@@ -158,8 +161,8 @@ section:first-of-type {
 
 .hero-subheading h2 {
     color: white;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .hero-subheading p {
@@ -194,8 +197,8 @@ section:first-of-type {
 .tts-home-logos {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     margin: 0 -14px;
     padding: 0;
@@ -210,7 +213,6 @@ section:first-of-type {
     width: auto;
     max-height: 69px;
 }
-
 
 
 ul.popular-courses {
@@ -416,11 +418,10 @@ ul.course-teasers {
 @media screen and (min-width: 959px) {
     /* 1. MAIN STYLESHEET OVERRIDES           */
     main {
-        padding-bottom: 80px;
+        padding-bottom: 0;
     }
 
     .rowena-image {
-        width: unset;
-        width: none;
+        width: auto;
     }
 }
