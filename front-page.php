@@ -32,7 +32,7 @@ get_header(); ?>
     </div>
 
     <section class="row great-courses-container">
-        <div>
+        <div class="center">
             <h3>Great Courses & Great Service</h3>
             <div class="great-courses">
                 <div>

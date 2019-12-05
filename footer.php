@@ -10,44 +10,52 @@
  * @since Twenty Ten 1.0
  */
 ?>
-<div class="center">
-    <section class="row">
-        <div class="tts-accreditation-logos-wrap">
-            <div class="tts-accreditation-logos-title">Accredited by</div>
-            <ul class="tts-accreditation-logos">
-                <li>
-                    <img src="/wp-content/uploads/2019/09/citb-logo-2.png" alt="citb logo">
-                </li>
-                <li>
-                    <img src="/wp-content/uploads/2019/09/PASMA-logo-2.png" alt="pasma logo">
-                </li>
-                <li>
-                    <img src="/wp-content/uploads/2019/09/IPAF-logo-3.png" alt="ipaf logo">
-                </li>
-            </ul>
-        </div>
-
-    </section>
-</div>
-<footer>
+<footer id="site-footer">
     <div class="center">
-        <div class="orange clearfix">
-			<?php echo do_shortcode( "[smartblock id=241]" ); ?>
+        <div class="site-footer-inner">
+            <div class="footer-block">
+                <div class="footer-block-inner">
+					<?php if ( has_nav_menu( 'footer-menu' ) ): ?>
+                        <div class="site-footer-menu">
+							<?php
+							wp_nav_menu( array(
+								'theme_location' => 'footer-menu',
+								'fallback_cb'    => false,
+								'container'      => ''
+							) );
+							?>
+                        </div>
+					<?php endif; ?>
+                    <div class="footer-social-icons"><?php echo do_shortcode( "[smartblock id=2359]" ); ?></div>
+					<?php echo do_shortcode( "[smartblock id=281]" ); ?>
+                </div>
+            </div>
+            <div class="footer-block">
+                <div class="footer-block-inner">
+                    <div class="footer-block-title">Accredited by</div>
+                    <ul class="tts-accreditation-logos">
+                        <li>
+                            <img src="/wp-content/uploads/2019/09/citb-logo-2.png" alt="citb logo">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2019/09/PASMA-logo-2.png" alt="pasma logo">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2019/09/IPAF-logo-3.png" alt="ipaf logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-block">
+                <div class="footer-block-inner">
+                    <div class="footer-contact-icons">
+						<?php echo do_shortcode( "[smartblock id=241]" ); ?>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info">
-			<?php if ( has_nav_menu( 'footer-menu' ) ) { /* if menu location 'primary-menu' exists then use custom menu */
-				wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );
-			} ?>
-            <div class="clear"></div>
-			<?php if ( empty( $_GET['administrate_checkout_event_id'] ) ): ?>
-                <div class="footer-social-icons"><?php echo do_shortcode( "[smartblock id=2359]" ); ?></div>
-			<?php endif; ?>
-			<?php echo do_shortcode( "[smartblock id=281]" ); ?>
-        </div>
-        <div class="clear"></div>
     </div>
 </footer>
-
 <?php
 if ( is_page( 'basket' ) || is_page( 'checkout' ) ) {
 

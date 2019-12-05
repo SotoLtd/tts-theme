@@ -27,17 +27,6 @@
     .tpd-content {
         width: 560px;
     }
-
-    .tts-checkout-footer-left .administrate-footer {
-        text-align: left;
-    }
-
-    .tts-checkout-footer-right img {
-        position: absolute;
-        right: 0;
-        display: block;
-        top: 25px;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -124,10 +113,6 @@
 
     .course-enquiry-form {
         display: none !important;
-    }
-
-    .tts-checkout-footer-right {
-        text-align: center;
     }
 
     #main-nav {
@@ -304,77 +289,7 @@
 }
 
 @media screen and (max-width: 959px) {
-    footer {
-        padding-bottom: 10px;
-    }
 
-    footer .center {
-        background-position: 44px bottom;
-    }
-
-    footer .orange {
-        border-radius: 0;
-        height: auto;
-        margin-bottom: 15px;
-        position: static;
-        width: 100%;
-    }
-
-    footer .footer-orrage-logo {
-        float: left;
-        width: 378px;
-    }
-
-    footer .orange ul {
-        float: right;
-        margin: 0;
-        padding: 29px 0 15px;
-        text-align: right;
-        width: 370px;
-    }
-
-    footer .orange li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    footer .info {
-        width: 100%;
-    }
-
-    footer .info ul {
-        float: none;
-        text-align: center;
-    }
-
-    footer .info li {
-        display: inline-block;
-        float: none;
-    }
-
-    footer .info .accreds {
-        text-align: center;
-    }
-
-    footer .info p {
-        text-align: center;
-    }
-
-    footer .info .copyright {
-        text-align: center;
-    }
-
-    footer .info .accreds {
-        text-align: center;
-    }
-
-    footer .info p {
-        text-align: center;
-    }
-
-    footer .info .copyright {
-        text-align: center;
-    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -508,41 +423,6 @@
         text-align: center;
     }
 
-    footer .center {
-        background-position: 21px bottom;
-        background-size: 390px auto;
-    }
-
-    footer .orange {
-        padding-top: 25px;
-    }
-
-    footer .footer-orrage-logo {
-        float: none;
-        margin: 0 auto;
-    }
-
-    footer .orange ul {
-        display: block;
-        float: none;
-        margin: 0;
-        padding: 10px 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    footer .orange li {
-        margin: 0 6px 0 0;
-    }
-
-    footer .info .accreds {
-        text-align: center;
-    }
-
-    footer .info .contactus {
-        text-align: center;
-    }
-
     .tpd-content {
         max-width: 460px;
     }
@@ -670,46 +550,6 @@
     }
 
     main .col.col2 .rightlinks {
-        text-align: center;
-    }
-
-    footer .center {
-        background-position: 7px bottom;
-        background-size: 315px auto;
-    }
-
-    footer .info {
-        height: 200px;
-        width: 100%;
-    }
-
-    footer .orange {
-        padding-top: 25px;
-    }
-
-    footer .footer-orrage-logo {
-        float: none;
-        margin: 0 auto;
-    }
-
-    footer .orange ul {
-        display: block;
-        float: none;
-        margin: 0;
-        padding: 10px 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    footer .orange li {
-        margin: 0 6px 0 0;
-    }
-
-    footer .info .accreds {
-        text-align: center;
-    }
-
-    footer .info .contactus {
         text-align: center;
     }
 
@@ -868,22 +708,6 @@
 
     .flexslider .flex-prev, .flexslider .flex-next {
         top: 68px;
-    }
-
-    footer .footer-orrage-logo {
-        width: auto;
-        background-position: center top;
-    }
-
-    footer .center {
-        background-position: center bottom;
-        background-size: 232px auto;
-        padding-bottom: 65px;
-    }
-
-    footer .info {
-        height: auto;
-        width: 100%;
     }
 
     .course-stiker-img, .course-traingin-status img {
@@ -1123,6 +947,16 @@
     .tbs-header-cart-summery-wrap {
         margin: 0;
         padding: 0 0 20px;
+    }
+    .site-footer-inner {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footer-block {
+        width: auto;
+        padding: 0;
+        margin-bottom: 25px;
     }
 }
 
