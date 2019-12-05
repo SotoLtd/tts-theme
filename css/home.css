@@ -1,4 +1,4 @@
-/* 
+/*
 *  This stylesheet has been approached mobile first.
 *  It is intended to overwrite and augment the existing stylsheet,
 *  but be done in such a way that it could be pulled out and used elsewhere
@@ -16,7 +16,7 @@
 /* 4.1 SECTION                            */
 /* 4.2 HERO SECTION                       */
 /* 4.3. HERO SUBHEADING                   */
-/* 4.5 ORANGE BORDER                      */
+/* 4.5 GREAT COURSES                      */
 
 /* 5. HOME                                */
 /* 5.1 HERO SECTION (overwrite 4.1)       */
@@ -179,6 +179,18 @@ section:first-of-type {
     font-size: inherit;
 }
 
+/* 4.5 GREAT COURSES */
+.great-courses-container {
+  margin: 0 auto;
+}
+.great-courses-container div {
+  width: 950px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.great-courses hr {
+  display: none;
+}
 
 /* 5. HOME                           */
 /* Home Logos*/
@@ -236,6 +248,7 @@ ul.popular-courses li a {
 .dashicons-arrow-right-alt2::before {
     color: #e95a0c;
     font-weight: bold;
+    content: " >" !important;
 }
 
 .contact-form, h2.popular-courses-title {
@@ -359,12 +372,28 @@ ul.course-teasers {
         max-width: 585px;
     }
 
-    /* 4.5 ORANGE BORDER               */
-    .orange-border {
-        border: 2px solid #e95a0c;
-        border-radius: 20px;
-        padding: 0 0 0 20px;
+    /* 4.5 GREAT COURSES             */
+
+    .great-courses-container {
+      background-color: #eee;
+      width: 100%;
+      padding-bottom: 40px;
     }
+    .great-courses-container div * {
+      text-align: center;
+    }
+    .great-courses {
+      display: flex;
+    }
+    .great-courses hr {
+      display: block;
+      max-width: 40px;
+      border: 1px solid #e95a0c;
+    }
+    .great-courses>div {
+      width: 33%;
+    }
+
 
 
     /* 5. HOME                         */
