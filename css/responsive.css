@@ -171,7 +171,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
-    .center {
+    .center, .great-courses-container {
         width: 748px;
     }
 
@@ -378,7 +378,7 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
-    .center {
+    .center, .great-courses-container {
         width: 620px;
     }
 
@@ -718,7 +718,7 @@
         height: auto;
     }
 
-    .center {
+    .center, .great-courses-container {
         width: 540px;
     }
 
@@ -818,7 +818,7 @@
         display: none;
     }
 
-    .center {
+    .center, .great-courses-container {
         width: 90%;
     }
 
