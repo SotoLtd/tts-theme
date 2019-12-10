@@ -442,7 +442,18 @@ img {
     display: block;
     zoom: 1;
 }
-
+.tts-error-msg {
+    color: #e95a0c;
+    display: none;
+    font-size: 12px;
+}
+.tts-validation-failed .tts-error-msg {
+    display: block;
+    padding: 5px 0 0;
+}
+.tts-validation-failed input {
+    border: 2px solid #f00!important;
+}
 header {
     background: #000;
     width: 100%;
