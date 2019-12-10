@@ -35,11 +35,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<p>&quot;Hello, my name is Rowena Hicks and I am the founder and the MD of The Training Societi in Bristol.</p>
     <p>I just wanted to say a huge thank you for your first ever booking with us which is really appreciated.</p>
     <p>I trust that our team are taking good care of you and your delegates but if you need anything else from them then their contact details are below:</p>
-    <p>&#128073;&#127996; If you need advice on what training you need or wish to book a course - Ryan 01179 971 1892 - Option 1 - <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:info@thetrainingsocieti.co.uk">info@thetrainingsocieti.co.uk</a></p>
-    <p>&#128073;&#127996; If you have an existing course booking with us and wish to talk to us about this - Chaz - 0117 971 1892 - Option 2 - <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:bookings@thetrainingsocieti.co.uk">bookings@thetrainingsocieti.co.uk</a></p>
-    <p>&#128073;&#127996; If you have a query about your Certification - Kath 0117 971 1892 option 3 - <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:certificates@thetrainingsocieti.co.uk">certificates@thetrainingsocieti.co.uk</a></p>
-    <p>&#128073;&#127996; If you want to talk to us about Finance - Lisa - 0117 971 1892 option 4 or <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:finance@thetrainingsocieti.co.uk">finance@thetrainingsocieti.co.uk</a></p>
-    <p>&#128073;&#127996;&nbsp; For anything else! -&nbsp;Ryan 01179 971 1892 - Option 5 <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:info@thetrainingsocieti.co.uk">info@thetrainingsocieti.co.uk</a></p>
+    <p>&#128073;&#127996; If you need advice on what training you need or wish to book a course - Ryan 01179 971 1892 - Option 1 - <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:info@trainingsocieti.co.uk">info@trainingsocieti.co.uk</a></p>
+    <p>&#128073;&#127996; If you have an existing course booking with us and wish to talk to us about this - Chaz - 0117 971 1892 - Option 2 - <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:bookings@trainingsocieti.co.uk">bookings@trainingsocieti.co.uk</a></p>
+    <p>&#128073;&#127996; If you have a query about your Certification - Kath 0117 971 1892 option 3 - <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:certificates@trainingsocieti.co.uk">certificates@trainingsocieti.co.uk</a></p>
+    <p>&#128073;&#127996; If you want to talk to us about Finance - Lisa - 0117 971 1892 option 4 or <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:finance@trainingsocieti.co.uk">finance@trainingsocieti.co.uk</a></p>
+    <p>&#128073;&#127996;&nbsp; For anything else! -&nbsp;Ryan 01179 971 1892 - Option 5 <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:info@trainingsocieti.co.uk">info@trainingsocieti.co.uk</a></p>
 	<p>&quot;I also wanted to let you know that now you are one of our customers, we want to do everything possible to take care of you, your delegates and&nbsp;your company to give you the correct advice on training and help you where ever possible.</p>
 	<table width="100%" cellspacing="0" cellpadding="20" border="0" style="margin-bottom: 15px;">
 		<tbody>
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<img style="display: block;height: auto;width: 100%;border: 0;" src="<?php echo get_stylesheet_directory_uri() ?>/images/email/2018wallplanner.PNG" alt="" width="300">
 				</td>
 				<td style="padding: 0 0 0 12px;width: 50%;" valign="top">
-					<p>One thing we have are wallplanners which have all of our up and coming dates on them.&nbsp;</p><p style="Margin-top: 20px;Margin-bottom: 0;">Other customers have said how useful they are, so if you want a copy (they are free) then just <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:rowena.hicks@thetrainingsocieti.co.uk">email me</a> and I will get one in the post to you.</p>
+					<p>One thing we have are wallplanners which have all of our up and coming dates on them.&nbsp;</p><p style="Margin-top: 20px;Margin-bottom: 0;">Other customers have said how useful they are, so if you want a copy (they are free) then just <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #fc7208;" href="mailto:rowena.hicks@trainingsocieti.co.uk">email me</a> and I will get one in the post to you.</p>
 				</td>
 			</tr>
 		</tbody>

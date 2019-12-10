@@ -66,14 +66,14 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 	</table>
 <p style="font-size: 13px;line-height: 20px;">On successful completion of course each delegate will receive an attendance certificate and photo card (if supplied) approximately 4 weeks after the course has been completed.  For CITB courses this may be 8 weeks.</p>
 <p style="font-size: 13px;line-height: 20px;">We welcome all delegates from all nationalities who want to learn and grow with us.  However, as per our terms and conditions, please note that it is the bookers responsibility to make sure that delegates have a satisfactory understanding of the English language in terms of reading, writing, listening and spoken.  Translators are not allowed.  If you feel an English course is needed we recommend the course "English for Speakers of Other Languages" which can be found at <a href="http://www.cityofbristol.ac.uk">www.cityofbristol.ac.uk</a>.</p>
-<p style="font-size: 13px;line-height: 20px;">Please note that charges are applicable for cancellations and transfers (dates and venues) of courses as per our <a href="https://thetrainingsocieti.co.uk/terms-and-conditions/">terms and conditions</a>.</p>
+<p style="font-size: 13px;line-height: 20px;">Please note that charges are applicable for cancellations and transfers (dates and venues) of courses as per our <a href="https://trainingsocieti.co.uk/terms-and-conditions/">terms and conditions</a>.</p>
 <p style="font-size: 13px;line-height: 20px;">I would like to take this opportunity to thank you very much for choosing The Training Societi Ltd.  I trust that our service meets your expectations and that we will be able to help you with your future training requirements.</p>
 <p style="font-size: 13px;line-height: 20px;">If you have any questions regarding this booking please phone me direct on 0117 971 1892 option 2.</p>	
 <p style="font-size: 13px;line-height: 20px;">Kind regards</p>
 <p style="font-size: 13px;line-height: 20px;"><strong>Chaz Foulstone</strong></p>
 <p style="font-size: 13px;line-height: 20px;">01179 711 892 Option 2</p>
-<p style="font-size: 13px;line-height: 20px;"><a href="mailto:bookings@thetrainingsocieti.co.uk">bookings@thetrainingsocieti.co.uk</a></p>
-<p style="font-size: 13px;line-height: 20px;"><a href="https://thetrainingsocieti.co.uk/">www.thetrainingsocieti.co.uk</a></p>
+<p style="font-size: 13px;line-height: 20px;"><a href="mailto:bookings@trainingsocieti.co.uk">bookings@trainingsocieti.co.uk</a></p>
+<p style="font-size: 13px;line-height: 20px;"><a href="https://trainingsocieti.co.uk/">www.trainingsocieti.co.uk</a></p>
 <?php
 /**
  * @hooked WC_Emails::email_footer() Output the email footer
