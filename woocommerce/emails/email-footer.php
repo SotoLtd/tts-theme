@@ -45,29 +45,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 																<span>Registered Company No. <strong>7809974</strong><br>VAT Registered No. <strong>127 0282 39</strong></span><br>
 																<span>Registered in England and Wales: <strong>1 Riverside Business Centre, St Annes, Bristol, BS4 4ED</strong></span>
 															</p>
-															<table width="100%" cellspacing="0" cellpadding="20" border="0" style="margin-bottom: 15px;margin-top: 20px;">
-																<tr>
-																	<td style="padding: 0 12px 0 0;" valign="top">
-																		<p style="padding-bottom: 20px;">
-																			<a style="text-xt-decoration: underline;color: #b3b3b3;" href="http://rowenahicks.createsend1.com/t/t-l-chluhr-l-it/">
-																				<img style="border: 0;" src="http://i2.createsend1.com/static/eb/master/13-the-blueprint-3/images/facebook.png" alt="Facebook" width="26" height="26">
-																			</a> 
-																			<a style="text-decoration: underline;color: #b3b3b3;" href="http://rowenahicks.createsend1.com/t/t-l-chluhr-l-ii/">
-																				<img style="border: 0;" src="http://i4.createsend1.com/static/eb/master/13-the-blueprint-3/images/youtube.png" alt="YouTube" width="26" height="26">
-																			</a> 
-																			<a style="text-decoration: underline;color: #b3b3b3;" href="http://rowenahicks.createsend1.com/t/t-l-chluhr-l-id/">
-																				<img style="border: 0;" src="http://i6.createsend1.com/static/eb/master/13-the-blueprint-3/images/linkedin.png" alt="LinkedIn" width="26" height="26">
-																			</a> 
-																			<a style="text-decoration: underline;color: #b3b3b3;" href="http://rowenahicks.createsend1.com/t/t-l-chluhr-l-ih/">
-																				<img style="border: 0;" src="http://i7.createsend1.com/static/eb/master/13-the-blueprint-3/images/website.png" alt="Website" width="26" height="26">
-																			</a>
-																		</p>
-																		<p>
-																			The Training Societi Ltd <br/><a href="https://www.trainingsocieti.co.uk" target="_blank">www.trainingsocieti.co.uk</a>
-																		</p>
-																	</td>
-																</tr>
-															</table>
 														</td>
 													</tr>
 												</table>

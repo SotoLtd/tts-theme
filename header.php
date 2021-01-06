@@ -22,27 +22,13 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/css/responsive.css"/>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-
-    <script>
-        (function () {
-            var _fbq = window._fbq || (window._fbq = []);
-            if (!_fbq.loaded) {
-                var fbds = document.createElement('script');
-                fbds.async = true;
-                fbds.src = '//connect.facebook.net/en_US/fbds.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(fbds, s);
-                _fbq.loaded = true;
-            }
-            _fbq.push(['addPixelId', '1578320215739095']);
-        })();
-        window._fbq = window._fbq || [];
-        window._fbq.push(['track', 'PixelInitialized', {}]);
-    </script>
-    <noscript>
-        <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1578320215739095&amp;ev=PixelInitialized"/>
-    </noscript>
-
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "3vklxjkifd");
+</script>
 	<?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -50,7 +36,6 @@
 	if ( is_singular() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
 	 * generally use this hook to add elements to <head> such
@@ -69,7 +54,7 @@
     </div>
     <div class="center">
         <div class="col col1">
-            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="https://trainingsocieti.co.uk/wp-content/uploads/2019/07/tts-logo.jpg" class="logo"/></a>
+            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="https://thetrainingsocieti.co.uk/wp-content/uploads/2019/07/tts-logo.jpg" class="logo"/></a>
             <div class="quicklinks tts-mobile">
 				<?php echo do_shortcode( "[smartblock id=375]" ); ?>
                 <div class="clear"></div>

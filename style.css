@@ -165,7 +165,6 @@ a img {
 }
 
 .privacy-policy li {
-    list-style-type: disc;
     padding: 0px 0px 0px 0px;
 }
 
@@ -595,7 +594,7 @@ header .methods .method.tel {
 }
 
 header .methods .method li {
-    font-size: 34px;
+    font-size: 26px;
     height: 40px;
     margin: 0;
     padding: 4px 0 0 54px;
@@ -1375,7 +1374,7 @@ section#homeboxes .box8 {
     margin-right: 5px;
 }
 .footer-social-icons img {
-    width: 46px;
+    width: 30px;
     height: auto;
 }
 .tts-accreditation-logos {
@@ -1389,7 +1388,6 @@ section#homeboxes .box8 {
 }
 .tts-accreditation-logos li {
     margin: 0;
-    width: 33%;
 }
 .tts-accreditation-logos li a {
     text-decoration: none;
@@ -3087,6 +3085,7 @@ h1.course-title {
     transition: right .4s ease-in-out;
     -moz-transition: right .4s ease-in-out;
     -webkit-transition: right .4s ease-in-out;
+    display: none;
 }
 .tts-app-loaded .course-enquiry-form {
     right: -260px;
@@ -4179,4 +4178,11 @@ p.tbs-stars.selected a:not(.active)::before {
 .tbs-mbf-messages p {
     margin: 0 0 15px;
     color: #000;
+}
+.single-post main .center {
+  background: none;
+}
+td.course-date-col-date {
+  color: #fc5400;
+    font-weight: 600;
 }

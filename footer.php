@@ -34,15 +34,7 @@
                 <div class="footer-block-inner">
                     <div class="footer-block-title">Accredited by</div>
                     <ul class="tts-accreditation-logos">
-                        <li>
-                            <img src="/wp-content/uploads/2019/09/citb-logo-2.png" alt="citb logo">
-                        </li>
-                        <li>
-                            <img src="/wp-content/uploads/2019/09/PASMA-logo-2.png" alt="pasma logo">
-                        </li>
-                        <li>
-                            <img src="/wp-content/uploads/2019/09/IPAF-logo-3.png" alt="ipaf logo">
-                        </li>
+                      <li><img src="/wp-content/uploads/2020/10/accredited.png" alt="acredited-logos"></li>
                     </ul>
                 </div>
             </div>

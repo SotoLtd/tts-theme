@@ -32,6 +32,12 @@
 /* 1. MAIN STYLESHEET OVERRIDES    */
 
 /* 1.1 HOME                        */
+.mob-hero {
+  display: block;
+}
+.dsk-hero {
+  display: none;
+}
 body.home {
     background-color: white;
 }
@@ -357,13 +363,22 @@ ul.course-teasers {
     /* 4. COMPONENTS                   */
     /* 4.2 HERO SECTION                */
     .hero-section {
-        height: 420px;
+        height: 200px;
     }
 
     .hero-overlay {
         max-width: 585px;
     }
-
+    .mob-hero {
+      display: none;
+    }
+    .dsk-hero {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .dsk-hero .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.3) !important;
+    }
     /* 4.5 GREAT COURSES             */
 
     .great-courses-container {

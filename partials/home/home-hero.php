@@ -13,8 +13,8 @@
         <h2><?php echo $search_title; ?></h2>
         <?php endif; ?>
         <?php get_template_part( 'partials/home/searchform' ); ?>
-	</div>	
-	
+	</div>
+
 </div>
 
 <div class="hero-subheading">
@@ -34,13 +34,13 @@
 	    'a' => array('class' => array(), 'style' => array(), 'href' => array(), 'target' => array()),
     ));
     ?>
-    <div class="center">
+
         <?php if($subheading_title): ?>
         <h2><?php echo $subheading_title; ?></h2>
         <?php endif; ?>
         <?php if($subheading_subtitle): ?>
         <p><?php echo $subheading_subtitle; ?></p>
         <?php endif; ?>
-    </div>    
-    
+       
+
 </div>
