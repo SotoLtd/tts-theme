@@ -1,4 +1,4 @@
-<form role="search" method="get" class="search-form row" action="<?php echo home_url( '/' ); ?>">
+<form role="search" method="get" class="searchform search-form row" action="<?php echo home_url( '/' ); ?>">
 <?php
 $search_placeholder = trim(get_field('search_placeholder'));
 $search_placeholder = strip_tags($search_placeholder);
@@ -11,7 +11,5 @@ $search_placeholder = strip_tags($search_placeholder);
             title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
         <input type="hidden" name="post_type" value="courses"> 
     </label>
-
     <button type="submit" class="dashicons dashicons-search" value="<?php echo esc_attr_x( 'Search', 'submit button'); ?>"></button>
-
 </form>
