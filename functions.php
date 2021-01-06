@@ -40,7 +40,7 @@
 
 //Initiate Training Courses
 //Quote Rotator modifications
-include_once get_stylesheet_directory() . '/quotes/modify.php';
+//include_once get_stylesheet_directory() . '/quotes/modify.php';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -414,15 +414,6 @@ function twentyten_widgets_init() {
 			'before_title'  => '<h2 class="widgettitle">',
 			'after_title'   => '</h2>',
 		) );
-		register_sidebar( array(
-			'name'          => 'Quotes Sidebar',
-			'id'            => 'quotes-sidebar',
-			'description'   => 'This is container of quotes rotator',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h2 class="widgettitle">',
-			'after_title'   => '</h2>',
-		) );
 	}
 	if ( function_exists( 'register_sidebar' ) ) {
 		register_sidebar( array(
@@ -584,6 +575,9 @@ function tts_shortcodes_in_cf7( $form ) {
 add_filter( 'wpcf7_form_elements', 'tts_shortcodes_in_cf7' );
 // Remove version string
 function tts_remove_script_version( $src ) {
+    if(is_admin()) {
+        return $src;
+    }
 	//$parts = explode( '?', $src );
 	$home_url = site_url();
 	if ( false !== strpos( $src, $home_url ) ) {
@@ -823,3 +817,15 @@ function wpb_custom_courses_children_menu() {
 }
 
 add_action( 'init', 'wpb_custom_courses_children_menu' );
+
+add_action( 'wp_footer', 'redirect_cf7' );
+
+function redirect_cf7() {
+?>
+<script type="text/javascript">
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+       location = 'https://trainingsocieti.co.uk/success/';
+}, false );
+</script>
+<?php
+}
